@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
+import BaseImage from '@/components/ui/BaseImage'
 import { useLanguage } from '@/context/LanguageContext'
 
 type SolutionType = 'interior' | 'exterior'
@@ -199,7 +199,7 @@ export default function Solutions() {
 
                 {/* Real image — shown when it exists */}
                 {!imgErrors[solution.id] && (
-                  <Image
+                  <BaseImage
                     src={solution.image}
                     alt={`${t(solution.titleKey) as string} — Tampa Bay installation`}
                     fill

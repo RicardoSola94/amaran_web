@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
+import BaseImage from '@/components/ui/BaseImage'
 import { useLanguage } from '@/context/LanguageContext'
 
 type GalleryItemType = 'interior' | 'exterior'
@@ -155,7 +155,7 @@ export default function Gallery() {
                   </div>
                 ) : (
                   <>
-                    <Image
+                    <BaseImage
                       src={item.image}
                       alt={`${item.label} installation — ${item.city}, Tampa Bay`}
                       fill
@@ -337,7 +337,7 @@ export default function Gallery() {
                 width: 'min(90vw, 1000px)',
                 height: '75vh',
               }}>
-                <Image
+                <BaseImage
                   src={activeItem.image}
                   alt={`${activeItem.label} installation — ${activeItem.city}, Tampa Bay`}
                   fill

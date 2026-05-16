@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
+import BaseImage from '@/components/ui/BaseImage'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function Hero() {
@@ -23,11 +23,11 @@ export default function Hero() {
         }}
       >
         {/* FONDO — foto ocupa todo */}
-        <Image
+        <BaseImage
           src="/images/hero/hero_amaran.png"
           alt="Amaran Integral Service — Custom Zipper Screens and Blinds installation in Tampa Bay, Florida"
           fill
-          priority
+          fetchPriority="high"
           sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
         />
