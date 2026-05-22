@@ -51,7 +51,7 @@ export default function ZipperScreens() {
                 fontWeight: 600,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase',
-                color: '#d42b2b',
+                color: '#C9A84C',
                 marginBottom: 16,
                 display: 'flex',
                 alignItems: 'center',
@@ -63,7 +63,7 @@ export default function ZipperScreens() {
                   display: 'inline-block',
                   width: 24,
                   height: 1,
-                  background: '#d42b2b',
+                  background: '#C9A84C',
                   flexShrink: 0,
                 }}
               />
@@ -116,7 +116,7 @@ export default function ZipperScreens() {
               style={{
                 display: 'inline-block',
                 marginTop: 24,
-                color: '#d42b2b',
+                color: '#C9A84C',
                 fontFamily: 'var(--font-body)',
                 fontSize: 14,
                 fontWeight: 600,
@@ -138,7 +138,7 @@ export default function ZipperScreens() {
                   fontWeight: 500,
                   letterSpacing: '0.16em',
                   textTransform: 'uppercase',
-                  color: 'rgba(212,43,43,0.7)',
+                  color: 'rgba(201,168,76,0.7)',
                   marginBottom: 8,
                 }}
               >
@@ -171,7 +171,7 @@ export default function ZipperScreens() {
                   style={{
                     width: 3,
                     minHeight: 40,
-                    background: '#d42b2b',
+                    background: '#C9A84C',
                     flexShrink: 0,
                     marginTop: 2,
                   }}
@@ -237,7 +237,7 @@ export default function ZipperScreens() {
               >
                 {stat.num.split(/([%+★])/).map((part, j) =>
                   ['%', '+', '★'].includes(part) ? (
-                    <span key={j} style={{ color: '#d42b2b' }}>
+                    <span key={j} style={{ color: '#C9A84C' }}>
                       {part}
                     </span>
                   ) : (
@@ -284,18 +284,18 @@ export default function ZipperScreens() {
             marginBottom: 40,
             justifyContent: 'center',
           }}>
-            <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
             <span style={{
               fontFamily: 'var(--font-body)',
               fontSize: 10,
               fontWeight: 500,
               letterSpacing: '0.20em',
               textTransform: 'uppercase',
-              color: '#d42b2b',
+              color: '#C9A84C',
             }}>
               {t('benefits_eyebrow') as string}
             </span>
-            <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
           </div>
 
           <div className="benefits-mini-grid" style={{
@@ -354,12 +354,12 @@ export default function ZipperScreens() {
                   width: 40,
                   height: 40,
                   borderRadius: '50%',
-                  background: 'rgba(212,43,43,0.12)',
-                  border: '1px solid rgba(212,43,43,0.25)',
+                  background: 'rgba(201,168,76,0.12)',
+                  border: '1px solid rgba(201,168,76,0.25)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#d42b2b',
+                  color: '#C9A84C',
                   flexShrink: 0,
                 }}>
                   {icon}

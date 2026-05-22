@@ -15,7 +15,7 @@ const en = {
   hero_h1_accent: 'INTERIOR',
   hero_h1_line2: '& EXTERIOR SPACES',
   hero_subtitle:
-    'Custom zebra blinds, blackout blinds, zipper screens and motorized shades — made to measure and installed in Tampa Bay.',
+    'Custom zebra blinds, drapery, blackout shades, zipper screens and motorized screens — made to measure and installed in Tampa Bay.',
   hero_cta_primary: 'Get Free Estimate',
   hero_cta_secondary: 'View Our Work',
   hero_badge_licensed: '✓ Licensed & Insured',
@@ -143,45 +143,45 @@ const en = {
 
   sol_zebra_title: 'Zebra Blinds',
   sol_zebra_desc:
-    'Alternating sheer and solid bands for precise light and privacy control. Elegant, modern, and custom made for any window.',
+    'Alternating sheer and opaque bands for precise light control. Elegant, modern, and custom made for any window.',
   sol_zebra_b1: 'Precise light control',
   sol_zebra_b2: 'Privacy when you need it',
   sol_zebra_b3: 'Modern interior design',
 
-  sol_blackout_title: 'Blackout Blinds',
-  sol_blackout_desc:
-    '100% light-blocking custom blinds. Perfect for bedrooms, home theaters, and any room requiring total darkness.',
-  sol_blackout_b1: 'Blocks 100% of light',
-  sol_blackout_b2: 'Custom made to fit exactly',
-  sol_blackout_b3: 'Quiet and smooth operation',
+  sol_drapery_title: 'Drapery',
+  sol_drapery_desc:
+    'Modern custom curtains with opaque and sheer fabric options. Installed with premium track systems for a clean, tailored look.',
+  sol_drapery_b1: 'Opaque and sheer fabric options',
+  sol_drapery_b2: 'Premium track system installation',
+  sol_drapery_b3: 'Custom made to your exact dimensions',
 
-  sol_shade_title: 'Shade Screens',
-  sol_shade_desc:
-    'Solar fabric screens that reduce glare and heat while keeping your outside view. Ideal for large windows and sliding doors.',
-  sol_shade_b1: 'Blocks up to 90% UV',
-  sol_shade_b2: 'Maintains outside view',
-  sol_shade_b3: 'Lowers A/C costs',
+  sol_blackout_title: 'Blackout Shades',
+  sol_blackout_desc:
+    'Roller shades that block 100% of light. Perfect for bedrooms, home theaters, and any space requiring complete darkness.',
+  sol_blackout_b1: 'Blocks 100% of light',
+  sol_blackout_b2: 'Custom made to exact measurements',
+  sol_blackout_b3: 'Smooth and silent operation',
 
   sol_zipper_title: 'Zipper Screens',
   sol_zipper_desc:
-    'Retractable screens with a zipper-track edge that seals every side completely. Blocks insects, wind, and rain from patios and lanais.',
-  sol_zipper_b1: 'Zero insect gaps',
+    'Retractable screens with a zipper-rail system that seals completely on every side. Blocks insects, wind, and rain in patios and lanais.',
+  sol_zipper_b1: 'Zero gaps for insects',
   sol_zipper_b2: 'Wind and rain resistant',
   sol_zipper_b3: 'Manual or motorized',
 
+  sol_cable_title: 'Cable-Guided Screens',
+  sol_cable_desc:
+    'Exterior retractable screens guided by side cables instead of a rail system. Clean look, smooth operation, ideal for large openings.',
+  sol_cable_b1: 'Side cable guide system',
+  sol_cable_b2: 'Ideal for large exterior openings',
+  sol_cable_b3: 'Clean look without visible rails',
+
   sol_motorized_title: 'Motorized Screens',
   sol_motorized_desc:
-    'Any of our screens powered by a quiet electric motor. Control with remote, smartphone app, or smart home systems.',
-  sol_motorized_b1: 'Remote or app control',
-  sol_motorized_b2: 'Alexa & Google Home ready',
-  sol_motorized_b3: 'Available for all products',
-
-  sol_patio_title: 'Patio & Outdoor Screens',
-  sol_patio_desc:
-    "Custom screen enclosures for patios, lanais, porches, and commercial terraces. Built specifically for Florida's climate.",
-  sol_patio_b1: 'Full insect protection',
-  sol_patio_b2: 'UV and heat reduction',
-  sol_patio_b3: 'Built for Florida weather',
+    'Exterior screens with a silent electric motor. Control from anywhere with a remote or smartphone app.',
+  sol_motorized_b1: 'Remote and app control',
+  sol_motorized_b2: 'Silent electric motor',
+  sol_motorized_b3: 'Available for all exterior products',
 
   // Benefits
   benefits_eyebrow: 'Why Install?',
@@ -413,13 +413,13 @@ const en = {
   form_contact_whatsapp: 'WhatsApp',
   form_contact_email: 'Email',
   form_service_type: 'Service Type',
-  form_service_zipper: 'Zipper Screen',
-  form_service_shade: 'Shade Screen',
   form_service_zebra: 'Zebra Blinds',
-  form_service_blackout: 'Blackout Blinds',
-  form_service_motorized: 'Motorized System',
-  form_service_commercial: 'Commercial Project',
-  form_service_not_sure: "Not sure — let's talk",
+  form_service_drapery: 'Drapery',
+  form_service_blackout: 'Blackout Shades',
+  form_service_zipper: 'Zipper Screens',
+  form_service_cable: 'Cable-Guided Screens',
+  form_service_motorized: 'Motorized Screens',
+  form_service_not_sure: 'Not sure — help me choose',
   form_property_type: 'Property Type',
   form_property_residential: 'Residential',
   form_property_commercial: 'Commercial',

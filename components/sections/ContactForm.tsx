@@ -209,23 +209,23 @@ export default function ContactForm() {
                   rules={[required]}
                 >
                   <Select size="large" placeholder="—">
-                    <Select.Option value="zipper_screen">
-                      {t('form_service_zipper') as string}
-                    </Select.Option>
-                    <Select.Option value="shade_screen">
-                      {t('form_service_shade') as string}
-                    </Select.Option>
                     <Select.Option value="zebra_blinds">
                       {t('form_service_zebra') as string}
                     </Select.Option>
-                    <Select.Option value="blackout_blinds">
+                    <Select.Option value="drapery">
+                      {t('form_service_drapery') as string}
+                    </Select.Option>
+                    <Select.Option value="blackout_shades">
                       {t('form_service_blackout') as string}
                     </Select.Option>
-                    <Select.Option value="motorized">
-                      {t('form_service_motorized') as string}
+                    <Select.Option value="zipper_screens">
+                      {t('form_service_zipper') as string}
                     </Select.Option>
-                    <Select.Option value="commercial">
-                      {t('form_service_commercial') as string}
+                    <Select.Option value="cable_guided">
+                      {t('form_service_cable') as string}
+                    </Select.Option>
+                    <Select.Option value="motorized_screens">
+                      {t('form_service_motorized') as string}
                     </Select.Option>
                     <Select.Option value="not_sure">
                       {t('form_service_not_sure') as string}
@@ -303,8 +303,8 @@ export default function ContactForm() {
                   disabled={loading}
                   className="w-full"
                   style={{
-                    backgroundColor: '#d42b2b',
-                    borderColor: '#d42b2b',
+                    backgroundColor: '#C9A84C',
+                    borderColor: '#C9A84C',
                     height: '52px',
                     fontSize: '11px',
                     fontFamily: 'var(--font-body)',
@@ -330,11 +330,11 @@ export default function ContactForm() {
               </p>
               <p style={{ fontSize: 11, color: 'rgba(90,87,82,0.50)', textAlign: 'center', marginTop: 8 }}>
                 By submitting this form you agree to our{' '}
-                <a href="/terms" style={{ color: '#d42b2b' }}>
+                <a href="/terms" style={{ color: '#C9A84C' }}>
                   Terms
                 </a>
                 {' '}and{' '}
-                <a href="/privacy" style={{ color: '#d42b2b' }}>
+                <a href="/privacy" style={{ color: '#C9A84C' }}>
                   Privacy Policy
                 </a>.
               </p>
@@ -375,7 +375,7 @@ export default function ContactForm() {
                   {t(qKey) as string}
                 </span>
                 <span style={{
-                  color: '#d42b2b',
+                  color: '#C9A84C',
                   fontSize: 18,
                   lineHeight: 1,
                   flexShrink: 0,

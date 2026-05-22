@@ -62,8 +62,8 @@ export default function TrustBar() {
         className="trustbar-section"
         style={{
           backgroundColor: '#0e0e0e',
-          borderTop: '1px solid rgba(212,43,43,0.20)',
-          borderBottom: '1px solid rgba(212,43,43,0.20)',
+          borderTop: '1px solid rgba(201,168,76,0.20)',
+          borderBottom: '1px solid rgba(201,168,76,0.20)',
         }}
       >
         <div
@@ -102,12 +102,12 @@ export default function TrustBar() {
                     width: 40,
                     height: 40,
                     borderRadius: '50%',
-                    background: 'rgba(212,43,43,0.12)',
-                    border: '1px solid rgba(212,43,43,0.30)',
+                    background: 'rgba(201,168,76,0.12)',
+                    border: '1px solid rgba(201,168,76,0.30)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#d42b2b',
+                    color: '#C9A84C',
                     flexShrink: 0,
                   }}
                 >

@@ -105,18 +105,18 @@ export default function Benefits() {
             gap: 10,
             marginBottom: 16,
           }}>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
             <span style={{
               fontFamily: 'var(--font-body)',
               fontSize: 10,
               fontWeight: 500,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color: '#d42b2b',
+              color: '#C9A84C',
             }}>
               {t('benefits_eyebrow') as string}
             </span>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
           </div>
 
           <h2 style={{
@@ -163,7 +163,7 @@ export default function Benefits() {
               style={{
                 backgroundColor: '#111111',
                 border: hoveredIndex === index
-                  ? '1px solid rgba(212,43,43,0.35)'
+                  ? '1px solid rgba(201,168,76,0.35)'
                   : '1px solid rgba(255,255,255,0.06)',
                 borderRadius: 4,
                 padding: '32px 28px',
@@ -175,13 +175,13 @@ export default function Benefits() {
                 width: 44,
                 height: 44,
                 borderRadius: '50%',
-                background: 'rgba(212,43,43,0.12)',
-                border: '1px solid rgba(212,43,43,0.25)',
+                background: 'rgba(201,168,76,0.12)',
+                border: '1px solid rgba(201,168,76,0.25)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 marginBottom: 20,
-                color: '#d42b2b',
+                color: '#C9A84C',
                 flexShrink: 0,
               }}>
                 {icon}

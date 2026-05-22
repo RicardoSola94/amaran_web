@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import BaseImage from '@/components/ui/BaseImage'
+import Image from 'next/image'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function Hero() {
@@ -23,11 +23,11 @@ export default function Hero() {
         }}
       >
         {/* FONDO — foto ocupa todo */}
-        <BaseImage
+        <Image
           src="/images/hero/hero_amaran.png"
           alt="Amaran Integral Service — Custom Zipper Screens and Blinds installation in Tampa Bay, Florida"
           fill
-          fetchPriority="high"
+          priority
           sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
         />
@@ -59,18 +59,18 @@ export default function Hero() {
 
             {/* Eyebrow */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-              <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b', flexShrink: 0 }} />
+              <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C', flexShrink: 0 }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 10,
                 fontWeight: 500,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: '#d42b2b',
+                color: '#C9A84C',
               }}>
                 {t('hero_eyebrow') as string}
               </span>
-              <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b', flexShrink: 0 }} />
+              <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C', flexShrink: 0 }} />
             </div>
 
             {/* H1 */}
@@ -83,7 +83,7 @@ export default function Hero() {
             }}>
               <div style={{ color: '#ffffff' }}>{t('hero_h1_line1') as string}</div>
               <div>
-                <span style={{ color: '#d42b2b' }}>{t('hero_h1_accent') as string}</span>
+                <span style={{ color: '#C9A84C' }}>{t('hero_h1_accent') as string}</span>
                 <span style={{ color: '#ffffff' }}> {t('hero_h1_line2') as string}</span>
               </div>
             </h1>
@@ -110,9 +110,9 @@ export default function Hero() {
               ].map((badge) => (
                 <span key={badge} style={{
                   display: 'inline-block',
-                  background: 'rgba(212,43,43,0.12)',
-                  border: '1px solid rgba(212,43,43,0.30)',
-                  color: '#d42b2b',
+                  background: 'rgba(201,168,76,0.12)',
+                  border: '1px solid rgba(201,168,76,0.30)',
+                  color: '#C9A84C',
                   fontFamily: 'var(--font-body)',
                   fontSize: 10,
                   fontWeight: 600,
@@ -132,7 +132,7 @@ export default function Hero() {
                 href="#contact"
                 style={{
                   display: 'inline-block',
-                  backgroundColor: primaryHovered ? '#b01f1f' : '#d42b2b',
+                  backgroundColor: primaryHovered ? '#a8893a' : '#C9A84C',
                   color: '#ffffff',
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
@@ -157,8 +157,8 @@ export default function Hero() {
                   alignItems: 'center',
                   gap: 7,
                   backgroundColor: 'transparent',
-                  border: `1px solid ${secondaryHovered ? '#d42b2b' : 'rgba(255,255,255,0.22)'}`,
-                  color: secondaryHovered ? '#d42b2b' : 'rgba(255,255,255,0.85)',
+                  border: `1px solid ${secondaryHovered ? '#C9A84C' : 'rgba(255,255,255,0.22)'}`,
+                  color: secondaryHovered ? '#C9A84C' : 'rgba(255,255,255,0.85)',
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
                   fontWeight: 600,
@@ -218,8 +218,8 @@ export default function Hero() {
           .hero-overlay {
             background: linear-gradient(
               to bottom,
-              rgba(10,10,10,0.92) 0%,
-              rgba(10,10,10,0.82) 100%
+              rgba(10,10,10,0.75) 0%,
+              rgba(10,10,10,0.55) 100%
             ) !important;
           }
           .hero-content {

@@ -6,7 +6,7 @@ export default function FinalCTA() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20" style={{ background: '#d42b2b' }}>
+    <section className="py-20" style={{ background: '#C9A84C' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-white/70 font-body text-sm uppercase tracking-widest mb-4">
           {t('final_cta_eyebrow') as string}

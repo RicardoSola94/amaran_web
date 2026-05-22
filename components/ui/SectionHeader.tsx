@@ -21,11 +21,11 @@ export default function SectionHeader({
     <div className={`mb-12 ${textAlign}`}>
       {eyebrow && (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
-          <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 500, letterSpacing: '0.20em', textTransform: 'uppercase', color: '#d42b2b' }}>
+          <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 500, letterSpacing: '0.20em', textTransform: 'uppercase', color: '#C9A84C' }}>
             {eyebrow}
           </span>
-          <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+          <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
         </div>
       )}
       <h2

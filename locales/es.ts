@@ -15,7 +15,7 @@ const es = {
   hero_h1_accent: 'ESPACIOS',
   hero_h1_line2: 'INTERIORES Y EXTERIORES',
   hero_subtitle:
-    'Zebra blinds, blackout blinds, zipper screens y persianas motorizadas — a medida e instaladas en Tampa Bay.',
+    'Zebra blinds, drapery, blackout shades, zipper screens y pantallas motorizadas — a medida e instaladas en Tampa Bay.',
   hero_cta_primary: 'Cotización Gratis',
   hero_cta_secondary: 'Ver Nuestro Trabajo',
   hero_badge_licensed: '✓ Licenciados y Asegurados',
@@ -143,45 +143,45 @@ const es = {
 
   sol_zebra_title: 'Zebra Blinds',
   sol_zebra_desc:
-    'Bandas alternadas transparentes y opacas para control preciso de luz y privacidad. Elegante, moderno y a medida para cualquier ventana.',
+    'Bandas alternadas transparentes y opacas para control preciso de luz y privacidad. Elegante, moderno y a medida.',
   sol_zebra_b1: 'Control preciso de luz',
   sol_zebra_b2: 'Privacidad cuando la necesitas',
   sol_zebra_b3: 'Diseño interior moderno',
 
-  sol_blackout_title: 'Blackout Blinds',
+  sol_drapery_title: 'Drapery',
+  sol_drapery_desc:
+    'Cortinas modernas con opciones de tela opaca y traslúcida. Instaladas con sistemas de riel premium para un acabado limpio y elegante.',
+  sol_drapery_b1: 'Telas opacas y traslúcidas',
+  sol_drapery_b2: 'Sistema de riel premium',
+  sol_drapery_b3: 'Fabricadas a tus medidas exactas',
+
+  sol_blackout_title: 'Blackout Shades',
   sol_blackout_desc:
-    'Persianas que bloquean el 100% de la luz. Perfectas para dormitorios, salas de cine y espacios que requieren oscuridad total.',
+    'Persianas enrollables que bloquean el 100% de la luz. Perfectas para dormitorios, salas de cine y espacios que requieren oscuridad total.',
   sol_blackout_b1: 'Bloquea el 100% de la luz',
   sol_blackout_b2: 'Fabricado a tu medida exacta',
   sol_blackout_b3: 'Operación suave y silenciosa',
 
-  sol_shade_title: 'Shade Screens',
-  sol_shade_desc:
-    'Pantallas de tela solar que reducen el deslumbramiento y el calor manteniendo la vista al exterior. Ideal para ventanas grandes y puertas corredizas.',
-  sol_shade_b1: 'Bloquea hasta el 90% de UV',
-  sol_shade_b2: 'Mantiene la vista exterior',
-  sol_shade_b3: 'Reduce costos de A/C',
-
   sol_zipper_title: 'Zipper Screens',
   sol_zipper_desc:
-    'Persianas retráctiles con sistema de riel tipo zipper que sella completamente cada lado. Bloquea insectos, viento y lluvia en patios y lanais.',
+    'Pantallas retráctiles con sistema de riel tipo zipper que sella completamente cada lado. Bloquea insectos, viento y lluvia en patios y lanais.',
   sol_zipper_b1: 'Cero espacios para insectos',
   sol_zipper_b2: 'Resistente al viento y lluvia',
   sol_zipper_b3: 'Manual o motorizado',
 
+  sol_cable_title: 'Cable-Guided Screens',
+  sol_cable_desc:
+    'Pantallas exteriores retráctiles guiadas por cables laterales en lugar de riel. Aspecto limpio, operación suave, ideal para aberturas grandes.',
+  sol_cable_b1: 'Sistema de guía por cable lateral',
+  sol_cable_b2: 'Ideal para grandes aberturas exteriores',
+  sol_cable_b3: 'Sin rieles visibles',
+
   sol_motorized_title: 'Motorized Screens',
   sol_motorized_desc:
-    'Cualquiera de nuestras pantallas con motor eléctrico silencioso. Control por control remoto, app de smartphone o sistemas de hogar inteligente.',
-  sol_motorized_b1: 'Control remoto o por app',
-  sol_motorized_b2: 'Compatible con Alexa y Google Home',
-  sol_motorized_b3: 'Disponible para todos los productos',
-
-  sol_patio_title: 'Patio & Exterior Screens',
-  sol_patio_desc:
-    'Cerramientos de pantalla para patios, lanais, porches y terrazas comerciales. Construidos específicamente para el clima de Florida.',
-  sol_patio_b1: 'Protección total contra insectos',
-  sol_patio_b2: 'Reducción de UV y calor',
-  sol_patio_b3: 'Construido para el clima de Florida',
+    'Pantallas exteriores con motor eléctrico silencioso. Control desde cualquier lugar con control remoto o app de smartphone.',
+  sol_motorized_b1: 'Control remoto y por app',
+  sol_motorized_b2: 'Motor eléctrico silencioso',
+  sol_motorized_b3: 'Disponible para todos los productos exteriores',
 
   // Benefits
   benefits_eyebrow: '¿Por Qué Instalar?',
@@ -414,13 +414,13 @@ const es = {
   form_contact_whatsapp: 'WhatsApp',
   form_contact_email: 'Correo Electrónico',
   form_service_type: 'Tipo de Servicio',
-  form_service_zipper: 'Zipper Screen',
-  form_service_shade: 'Shade Screen',
   form_service_zebra: 'Zebra Blinds',
-  form_service_blackout: 'Blackout Blinds',
-  form_service_motorized: 'Sistema Motorizado',
-  form_service_commercial: 'Proyecto Comercial',
-  form_service_not_sure: 'No estoy seguro — hablemos',
+  form_service_drapery: 'Drapery',
+  form_service_blackout: 'Blackout Shades',
+  form_service_zipper: 'Zipper Screens',
+  form_service_cable: 'Cable-Guided Screens',
+  form_service_motorized: 'Motorized Screens',
+  form_service_not_sure: 'No estoy seguro — ayúdame a elegir',
   form_property_type: 'Tipo de Propiedad',
   form_property_residential: 'Residencial',
   form_property_commercial: 'Comercial',

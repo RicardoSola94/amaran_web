@@ -21,18 +21,18 @@ export default function WhyUs() {
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
             <span style={{
               fontFamily: 'var(--font-body)',
               fontSize: 10,
               fontWeight: 500,
               letterSpacing: '0.22em',
               textTransform: 'uppercase' as const,
-              color: '#d42b2b',
+              color: '#C9A84C',
             }}>
               {t('whyus_eyebrow') as string}
             </span>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
           </div>
           <h2 style={{
             fontFamily: 'var(--font-display)',
@@ -68,7 +68,7 @@ export default function WhyUs() {
               style={{
                 backgroundColor: '#111111',
                 border: hoveredCard === titleKey
-                  ? '1px solid rgba(212,43,43,0.30)'
+                  ? '1px solid rgba(201,168,76,0.30)'
                   : '1px solid rgba(255,255,255,0.06)',
                 borderRadius: 4,
                 cursor: 'default',
@@ -84,14 +84,14 @@ export default function WhyUs() {
                   width: 48,
                   height: 48,
                   borderRadius: '50%',
-                  background: 'rgba(212,43,43,0.10)',
-                  border: '1px solid rgba(212,43,43,0.25)',
+                  background: 'rgba(201,168,76,0.10)',
+                  border: '1px solid rgba(201,168,76,0.25)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontFamily: 'var(--font-display)',
                   fontSize: 18,
-                  color: '#d42b2b',
+                  color: '#C9A84C',
                 }}>
                   0{index + 1}
                 </div>
@@ -130,7 +130,7 @@ export default function WhyUs() {
             href="#contact"
             style={{
               display: 'inline-block',
-              backgroundColor: '#d42b2b',
+              backgroundColor: '#C9A84C',
               color: '#ffffff',
               fontFamily: 'var(--font-body)',
               fontSize: 11,

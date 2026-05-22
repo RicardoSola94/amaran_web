@@ -3,12 +3,12 @@
 import { useLanguage } from '@/context/LanguageContext'
 
 const services = [
-  'service_zebra_title',
-  'service_blackout_title',
-  'service_shade_title',
-  'service_zipper_title',
-  'service_motorized_title',
-  'service_commercial_title',
+  'sol_zebra_title',
+  'sol_drapery_title',
+  'sol_blackout_title',
+  'sol_zipper_title',
+  'sol_cable_title',
+  'sol_motorized_title',
 ] as const
 
 const companyLinks = [
@@ -119,7 +119,7 @@ export default function Footer() {
               fontWeight: 600,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
-              color: '#d42b2b',
+              color: '#C9A84C',
               marginBottom: 12,
             }}>
               {t('footer_service_areas') as string}

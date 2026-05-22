@@ -39,13 +39,13 @@ export default function Services() {
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
           <p style={{
             fontFamily: 'var(--font-body)', fontSize: '11px', fontWeight: '600',
-            letterSpacing: '0.22em', textTransform: 'uppercase', color: '#d42b2b',
+            letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9A84C',
             marginBottom: '16px', display: 'flex', alignItems: 'center',
             justifyContent: 'center', gap: '12px',
           }}>
-            <span style={{ display: 'block', width: '24px', height: '1px', background: '#d42b2b' }} />
+            <span style={{ display: 'block', width: '24px', height: '1px', background: '#C9A84C' }} />
             {t('services_eyebrow') as string}
-            <span style={{ display: 'block', width: '24px', height: '1px', background: '#d42b2b' }} />
+            <span style={{ display: 'block', width: '24px', height: '1px', background: '#C9A84C' }} />
           </p>
 
           <h2 style={{
@@ -95,7 +95,7 @@ export default function Services() {
               fontFamily: 'var(--font-display)', fontSize: '80px',
               lineHeight: '1', letterSpacing: '-0.02em',
               color: hoveredCard === service.num
-                ? 'rgba(212,43,43,0.18)'
+                ? 'rgba(201,168,76,0.18)'
                 : 'rgba(255,255,255,0.06)',
               transition: 'color 300ms',
               userSelect: 'none',
@@ -106,7 +106,7 @@ export default function Services() {
             {/* Red accent line */}
             <div style={{
               width: '32px', height: '3px',
-              background: '#d42b2b', marginBottom: '16px',
+              background: '#C9A84C', marginBottom: '16px',
             }} />
 
             {/* Type label */}
@@ -116,7 +116,7 @@ export default function Services() {
               fontWeight: 600,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: service.type === 'commercial' ? '#d42b2b' : 'rgba(158,155,149,0.5)',
+              color: service.type === 'commercial' ? '#C9A84C' : 'rgba(158,155,149,0.5)',
               marginBottom: 10,
             }}>
               {service.type === 'residential' ? '— Residential'
@@ -158,7 +158,7 @@ export default function Services() {
                 }}>
                   <span style={{
                     display: 'inline-block', width: '12px', height: '1px',
-                    background: '#d42b2b', flexShrink: 0,
+                    background: '#C9A84C', flexShrink: 0,
                   }} />
                   {t(featureKey) as string}
                 </li>
@@ -178,7 +178,7 @@ export default function Services() {
                 fontWeight: 600,
                 letterSpacing: '0.10em',
                 textTransform: 'uppercase',
-                color: '#d42b2b',
+                color: '#C9A84C',
                 textDecoration: 'none',
                 transition: 'gap 200ms',
               }}

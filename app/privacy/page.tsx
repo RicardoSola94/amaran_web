@@ -131,6 +131,6 @@ const pStyle: React.CSSProperties = {
 }
 
 const linkStyle: React.CSSProperties = {
-  color: '#d42b2b',
+  color: '#C9A84C',
   textDecoration: 'none',
 }

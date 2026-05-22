@@ -41,12 +41,12 @@ export default function Navbar() {
   const headerStyle: React.CSSProperties = isScrolled
     ? {
         backgroundColor: '#000000',
-        borderBottom: '1px solid rgba(212,43,43,0.40)',
+        borderBottom: '1px solid rgba(201,168,76,0.40)',
         boxShadow: '0 1px 40px rgba(0,0,0,0.8)',
       }
     : {
         backgroundColor: '#0a0a0a',
-        borderBottom: '1px solid rgba(212,43,43,0.20)',
+        borderBottom: '1px solid rgba(201,168,76,0.20)',
       }
 
   return (
@@ -59,7 +59,7 @@ export default function Navbar() {
         @media (max-width: 767px) {
           .navbar-logo-tagline { display: none !important; }
         }
-        .mobile-cta:hover, .mobile-cta:active { background-color: #b01f1f !important; }
+        .mobile-cta:hover, .mobile-cta:active { background-color: #a8893a !important; }
       `}</style>
       {/* ── HEADER ── */}
       <header
@@ -125,7 +125,7 @@ export default function Navbar() {
                 fontSize: 12,
                 fontWeight: 600,
                 letterSpacing: '0.08em',
-                color: '#d42b2b',
+                color: '#C9A84C',
                 textDecoration: 'none',
               }}
               className="whitespace-nowrap"
@@ -141,7 +141,7 @@ export default function Navbar() {
               style={{
                 display: 'inline-block',
                 padding: '9px 20px',
-                backgroundColor: ctaHovered ? '#b01f1f' : '#d42b2b',
+                backgroundColor: ctaHovered ? '#a8893a' : '#C9A84C',
                 color: '#ffffff',
                 fontFamily: 'var(--font-body)',
                 fontSize: 11,
@@ -248,7 +248,7 @@ export default function Navbar() {
               fontSize: 15,
               fontWeight: 600,
               letterSpacing: '0.08em',
-              color: '#d42b2b',
+              color: '#C9A84C',
               textDecoration: 'none',
               marginBottom: 16,
               marginTop: 24,
@@ -269,7 +269,7 @@ export default function Navbar() {
               display: 'block',
               width: '100%',
               padding: '14px',
-              backgroundColor: mobileCTAHovered ? '#b01f1f' : '#d42b2b',
+              backgroundColor: mobileCTAHovered ? '#a8893a' : '#C9A84C',
               color: '#ffffff',
               fontFamily: 'var(--font-body)',
               fontSize: 11,
@@ -337,7 +337,7 @@ function MobileNavLink({
       style={{
         fontFamily: 'var(--font-display)',
         fontSize: 52,
-        color: hovered ? '#d42b2b' : '#ffffff',
+        color: hovered ? '#C9A84C' : '#ffffff',
         lineHeight: 1.1,
         letterSpacing: '0.04em',
         textDecoration: 'none',

@@ -98,7 +98,7 @@ export default function Testimonials() {
                 backgroundColor: '#1a1a1a',
                 borderRadius: 4,
                 border: hoveredCard === nameKey
-                  ? '1px solid rgba(212,43,43,0.30)'
+                  ? '1px solid rgba(201,168,76,0.30)'
                   : '1px solid rgba(255,255,255,0.07)',
                 transition: 'border-color 250ms, transform 250ms',
                 transform: hoveredCard === nameKey ? 'translateY(-2px)' : 'translateY(0)',
@@ -108,7 +108,7 @@ export default function Testimonials() {
               <div className="flex gap-1 mb-4" aria-label={`${stars} stars`}>
                 {Array.from({ length: stars }).map((_, i) => (
                   <svg key={i} width={16} height={16} viewBox="0 0 24 24"
-                    fill="#d42b2b" stroke="none" aria-hidden="true">
+                    fill="#C9A84C" stroke="none" aria-hidden="true">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                   </svg>
                 ))}
@@ -157,7 +157,7 @@ export default function Testimonials() {
             href="#contact"
             style={{
               display: 'inline-block',
-              backgroundColor: '#d42b2b',
+              backgroundColor: '#C9A84C',
               color: '#ffffff',
               fontFamily: 'var(--font-body)',
               fontSize: 11,

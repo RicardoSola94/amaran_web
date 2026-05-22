@@ -49,18 +49,18 @@ export default function GalleryTestimonials() {
               gap: 10,
               marginBottom: 16,
             }}>
-              <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 10,
                 fontWeight: 500,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase',
-                color: '#d42b2b',
+                color: '#C9A84C',
               }}>
                 {t('gallery_testimonials_eyebrow') as string}
               </span>
-              <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
             </div>
 
             <h2 style={{
@@ -161,7 +161,7 @@ export default function GalleryTestimonials() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 8,
-                background: '#d42b2b',
+                background: '#C9A84C',
                 color: '#ffffff',
                 fontFamily: 'var(--font-body)',
                 fontSize: 14,
@@ -192,18 +192,18 @@ export default function GalleryTestimonials() {
               gap: 10,
               marginBottom: 16,
             }}>
-              <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 10,
                 fontWeight: 500,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase',
-                color: '#d42b2b',
+                color: '#C9A84C',
               }}>
                 {t('testimonials_eyebrow') as string}
               </span>
-              <div style={{ width: 24, height: 1, background: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, background: '#C9A84C' }} />
             </div>
 
             <h2 style={{
@@ -249,7 +249,7 @@ export default function GalleryTestimonials() {
               >
                 <div style={{ display: 'flex', gap: 2, marginBottom: 16 }} aria-label={`${stars} stars`}>
                   {Array.from({ length: stars }).map((_, i) => (
-                    <span key={i} style={{ color: '#d42b2b', fontSize: 16 }} aria-hidden="true">★</span>
+                    <span key={i} style={{ color: '#C9A84C', fontSize: 16 }} aria-hidden="true">★</span>
                   ))}
                 </div>
 

@@ -16,20 +16,20 @@ const solutions = [
     image: '/images/solutions/zebra-blinds.jpeg',
   },
   {
+    id: 'drapery',
+    type: 'interior' as SolutionType,
+    titleKey: 'sol_drapery_title',
+    descKey: 'sol_drapery_desc',
+    benefitKeys: ['sol_drapery_b1', 'sol_drapery_b2', 'sol_drapery_b3'],
+    image: '/images/solutions/drapery.jpeg',
+  },
+  {
     id: 'blackout',
     type: 'interior' as SolutionType,
     titleKey: 'sol_blackout_title',
     descKey: 'sol_blackout_desc',
     benefitKeys: ['sol_blackout_b1', 'sol_blackout_b2', 'sol_blackout_b3'],
-    image: '/images/solutions/blackout-blinds.jpeg',
-  },
-  {
-    id: 'shade-interior',
-    type: 'interior' as SolutionType,
-    titleKey: 'sol_shade_title',
-    descKey: 'sol_shade_desc',
-    benefitKeys: ['sol_shade_b1', 'sol_shade_b2', 'sol_shade_b3'],
-    image: '/images/solutions/shade-screens.jpeg',
+    image: '/images/solutions/blackout-shades.jpeg',
   },
   {
     id: 'zipper',
@@ -40,20 +40,20 @@ const solutions = [
     image: '/images/solutions/zipper-screens.png',
   },
   {
+    id: 'cable',
+    type: 'exterior' as SolutionType,
+    titleKey: 'sol_cable_title',
+    descKey: 'sol_cable_desc',
+    benefitKeys: ['sol_cable_b1', 'sol_cable_b2', 'sol_cable_b3'],
+    image: '/images/solutions/cable-guided-screens.jpeg',
+  },
+  {
     id: 'motorized',
     type: 'exterior' as SolutionType,
     titleKey: 'sol_motorized_title',
     descKey: 'sol_motorized_desc',
     benefitKeys: ['sol_motorized_b1', 'sol_motorized_b2', 'sol_motorized_b3'],
     image: '/images/solutions/motorized_screens.png',
-  },
-  {
-    id: 'patio',
-    type: 'exterior' as SolutionType,
-    titleKey: 'sol_patio_title',
-    descKey: 'sol_patio_desc',
-    benefitKeys: ['sol_patio_b1', 'sol_patio_b2', 'sol_patio_b3'],
-    image: '/images/solutions/image7.jpeg',
   },
 ] as const
 
@@ -75,11 +75,11 @@ export default function Solutions() {
         <div className="solutions-header" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 64px', textAlign: 'center' }}>
 
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
-            <span style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: '#d42b2b' }}>
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
+            <span style={{ fontFamily: 'var(--font-body)', fontSize: 10, fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: '#C9A84C' }}>
               {t('solutions_eyebrow') as string}
             </span>
-            <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+            <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
           </div>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4.5vw, 60px)', lineHeight: 0.95, letterSpacing: '0.02em', color: '#0a0a0a', margin: '0 0 16px' }}>
@@ -165,12 +165,12 @@ export default function Solutions() {
                       width: 48,
                       height: 48,
                       borderRadius: '50%',
-                      background: 'rgba(212,43,43,0.10)',
-                      border: '1px solid rgba(212,43,43,0.20)',
+                      background: 'rgba(201,168,76,0.10)',
+                      border: '1px solid rgba(201,168,76,0.20)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: 'rgba(212,43,43,0.60)',
+                      color: 'rgba(201,168,76,0.60)',
                       position: 'relative',
                       zIndex: 1,
                     }}>
@@ -219,7 +219,7 @@ export default function Solutions() {
                   position: 'absolute', top: 12, left: 12, zIndex: 2,
                   backgroundColor: solution.type === 'interior'
                     ? 'rgba(10,10,10,0.85)'
-                    : 'rgba(212,43,43,0.90)',
+                    : 'rgba(201,168,76,0.90)',
                   color: '#ffffff',
                   fontFamily: 'var(--font-body)',
                   fontSize: 9,
@@ -249,14 +249,14 @@ export default function Solutions() {
                 <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', borderTop: '1px solid #eceae7', paddingTop: 14 }}>
                   {solution.benefitKeys.map((key) => (
                     <li key={key} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0', fontFamily: 'var(--font-body)', fontSize: 12, color: '#2a2926' }}>
-                      <span style={{ width: 10, height: 1, backgroundColor: '#d42b2b', flexShrink: 0, display: 'inline-block' }} />
+                      <span style={{ width: 10, height: 1, backgroundColor: '#C9A84C', flexShrink: 0, display: 'inline-block' }} />
                       {t(key) as string}
                     </li>
                   ))}
                 </ul>
 
                 {/* CTA */}
-                <a href="#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase' as const, color: '#d42b2b', textDecoration: 'none', marginTop: 'auto' }}>
+                <a href="#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase' as const, color: '#C9A84C', textDecoration: 'none', marginTop: 'auto' }}>
                   {t('solutions_card_cta') as string} <span style={{ fontSize: 14 }}>→</span>
                 </a>
               </div>

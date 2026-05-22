@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-red: #d42b2b;
-  --color-brand-red-dark: #b01f1f;
+  --color-brand-red: #C9A84C;
+  --color-brand-red-dark: #a8893a;
   --color-brand-black: #0a0a0a;
   --color-brand-white: #f8f7f5;
   --color-brand-gray-100: #f0efed;
@@ -42,13 +42,13 @@ h6 {
 
 /* Ant Design overrides */
 .ant-btn-primary {
-  background-color: #d42b2b !important;
-  border-color: #d42b2b !important;
+  background-color: #C9A84C !important;
+  border-color: #C9A84C !important;
 }
 
 .ant-btn-primary:hover {
-  background-color: #b01f1f !important;
-  border-color: #b01f1f !important;
+  background-color: #a8893a !important;
+  border-color: #a8893a !important;
 }
 
 .ant-form-item-label > label {

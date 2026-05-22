@@ -49,18 +49,18 @@ export default function Gallery() {
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
-              <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 10,
                 fontWeight: 500,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase' as const,
-                color: '#d42b2b',
+                color: '#C9A84C',
               }}>
                 {t('gallery_eyebrow') as string}
               </span>
-              <div style={{ width: 24, height: 1, backgroundColor: '#d42b2b' }} />
+              <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C' }} />
             </div>
             <h2 style={{
               fontFamily: 'var(--font-display)',
@@ -112,12 +112,12 @@ export default function Gallery() {
                       width: 44,
                       height: 44,
                       borderRadius: '50%',
-                      background: 'rgba(212,43,43,0.10)',
-                      border: '1px solid rgba(212,43,43,0.20)',
+                      background: 'rgba(201,168,76,0.10)',
+                      border: '1px solid rgba(201,168,76,0.20)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: 'rgba(212,43,43,0.55)',
+                      color: 'rgba(201,168,76,0.55)',
                     }}>
                       <svg width={20} height={20} viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" strokeWidth={1.2} strokeLinecap="round" strokeLinejoin="round">
@@ -150,7 +150,7 @@ export default function Gallery() {
                       left: 0,
                       right: 0,
                       height: 2,
-                      background: 'linear-gradient(to right, #d42b2b, transparent)',
+                      background: 'linear-gradient(to right, #C9A84C, transparent)',
                     }} />
                   </div>
                 ) : (
@@ -176,7 +176,7 @@ export default function Gallery() {
                       opacity: hoveredItem === item.id ? 1 : 0,
                       transition: 'opacity 250ms',
                     }}>
-                      <div style={{ width: 20, height: 1, backgroundColor: '#d42b2b', marginBottom: 4 }} />
+                      <div style={{ width: 20, height: 1, backgroundColor: '#C9A84C', marginBottom: 4 }} />
                       <div style={{
                         fontFamily: 'var(--font-body)',
                         fontSize: 12,
@@ -211,7 +211,7 @@ export default function Gallery() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 8,
-                backgroundColor: '#d42b2b',
+                backgroundColor: '#C9A84C',
                 color: '#ffffff',
                 fontFamily: 'var(--font-body)',
                 fontSize: 12,

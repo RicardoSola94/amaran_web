@@ -88,8 +88,8 @@ export default function Process() {
             {steps.map(({ titleKey, descKey, icon }, index) => (
               <div key={titleKey} className="relative flex flex-col items-center text-center">
                 {/* Step number circle */}
-                <div className="relative z-10 w-20 h-20 rounded-full flex flex-col items-center justify-center mb-6" style={{ background: 'rgba(212,43,43,0.10)', border: '2px solid rgba(212,43,43,0.22)' }}>
-                  <div style={{ color: '#d42b2b' }}>{icon}</div>
+                <div className="relative z-10 w-20 h-20 rounded-full flex flex-col items-center justify-center mb-6" style={{ background: 'rgba(201,168,76,0.10)', border: '2px solid rgba(201,168,76,0.22)' }}>
+                  <div style={{ color: '#C9A84C' }}>{icon}</div>
                   <span className="text-brand-red font-display text-xs mt-1">
                     {String(index + 1).padStart(2, '0')}
                   </span>
@@ -111,7 +111,7 @@ export default function Process() {
             href="#contact"
             style={{
               display: 'inline-block',
-              backgroundColor: '#d42b2b',
+              backgroundColor: '#C9A84C',
               color: '#ffffff',
               fontFamily: 'var(--font-body)',
               fontSize: 11,
@@ -144,7 +144,7 @@ export default function Process() {
             borderRadius: 4,
             padding: '28px 24px',
           }}>
-            <div style={{ color: '#d42b2b', fontFamily: 'var(--font-display)', fontSize: 13, letterSpacing: '0.1em', marginBottom: 12 }}>
+            <div style={{ color: '#C9A84C', fontFamily: 'var(--font-display)', fontSize: 13, letterSpacing: '0.1em', marginBottom: 12 }}>
               {t('materials_manual_label') as string}
             </div>
             <div style={{ color: '#0a0a0a', fontFamily: 'var(--font-display)', fontSize: 22, marginBottom: 10 }}>
@@ -157,12 +157,12 @@ export default function Process() {
 
           {/* Motorized */}
           <div style={{
-            background: 'rgba(212,43,43,0.06)',
-            border: '1px solid rgba(212,43,43,0.25)',
+            background: 'rgba(201,168,76,0.06)',
+            border: '1px solid rgba(201,168,76,0.25)',
             borderRadius: 4,
             padding: '28px 24px',
           }}>
-            <div style={{ color: '#d42b2b', fontFamily: 'var(--font-display)', fontSize: 13, letterSpacing: '0.1em', marginBottom: 12 }}>
+            <div style={{ color: '#C9A84C', fontFamily: 'var(--font-display)', fontSize: 13, letterSpacing: '0.1em', marginBottom: 12 }}>
               {t('materials_motorized_label') as string}
             </div>
             <div style={{ color: '#0a0a0a', fontFamily: 'var(--font-display)', fontSize: 22, marginBottom: 10 }}>
