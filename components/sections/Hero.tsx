@@ -52,7 +52,7 @@ export default function Hero() {
             width: '100%',
             maxWidth: 1280,
             margin: '0 auto',
-            padding: '88px 64px 48px 64px',
+            padding: '100px 64px 48px 64px',
           }}
         >
           <div style={{ maxWidth: 600 }}>
@@ -76,7 +76,7 @@ export default function Hero() {
             {/* H1 */}
             <h1 style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(52px, 6vw, 96px)',
+              fontSize: 'clamp(40px, 6vw, 96px)',
               lineHeight: 0.92,
               letterSpacing: '0.02em',
               margin: '0 0 18px 0',
@@ -133,7 +133,7 @@ export default function Hero() {
                 style={{
                   display: 'inline-block',
                   backgroundColor: primaryHovered ? '#a8893a' : '#C9A84C',
-                  color: '#ffffff',
+                  color: '#0a0a0a',
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
                   fontWeight: 700,
@@ -223,7 +223,7 @@ export default function Hero() {
             ) !important;
           }
           .hero-content {
-            padding: 96px 24px 40px 24px !important;
+            padding: 108px 24px 40px 24px !important;
           }
           .hero-ctas {
             flex-direction: column !important;
@@ -232,6 +232,9 @@ export default function Hero() {
             width: 100% !important;
             box-sizing: border-box !important;
             justify-content: center !important;
+          }
+          .hero-ctas a:last-child {
+            border-color: rgba(255,255,255,0.55) !important;
           }
         }
       `}</style>

@@ -55,12 +55,16 @@ export default function Navbar() {
         @media (max-width: 1023px) {
           .navbar-logo-sub { display: none !important; }
         }
+        @media (max-width: 767px) {
+          .navbar-logo-name { font-size: 14px !important; }
+          .navbar-logo-blinds { font-size: 14px !important; }
+        }
         .mobile-cta:hover, .mobile-cta:active { background-color: #a8893a !important; }
       `}</style>
       {/* ── HEADER ── */}
       <header
         className="fixed top-0 left-0 right-0 w-full transition-all"
-        style={{ height: 68, zIndex: 50, ...headerStyle }}
+        style={{ height: 80, zIndex: 50, ...headerStyle }}
       >
         {/* Inner container */}
         <div
@@ -71,34 +75,44 @@ export default function Navbar() {
           <a
             href="/"
             className="cursor-pointer"
-            style={{ textDecoration: 'none', flexShrink: 0 }}
+            style={{ textDecoration: 'none', flexShrink: 0, textAlign: 'center' }}
           >
             {/* ZEBRA */}
-            <div style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 15,
-              fontWeight: 700,
-              letterSpacing: '0.08em',
-              color: '#ffffff',
-              lineHeight: 1,
-              textTransform: 'uppercase',
-            }}>
+            <div
+              className="navbar-logo-name"
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 16,
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                color: '#ffffff',
+                lineHeight: 1,
+                textTransform: 'uppercase',
+                textAlign: 'center',
+                marginBottom: 1,
+              }}
+            >
               ZEBRA
             </div>
 
             {/* BLINDS — dorado */}
-            <div style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 15,
-              fontWeight: 700,
-              letterSpacing: '0.08em',
-              background: 'linear-gradient(180deg, #e8c96a 0%, #C9A84C 40%, #a8893a 70%, #C9A84C 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              lineHeight: 1,
-              textTransform: 'uppercase',
-            }}>
+            <div
+              className="navbar-logo-blinds"
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 16,
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                background: 'linear-gradient(180deg, #e8c96a 0%, #C9A84C 40%, #a8893a 70%, #C9A84C 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                lineHeight: 1,
+                textTransform: 'uppercase',
+                textAlign: 'center',
+                marginBottom: 2,
+              }}
+            >
               BLINDS
             </div>
 
@@ -106,12 +120,13 @@ export default function Navbar() {
             <div style={{
               display: 'flex',
               alignItems: 'center',
+              justifyContent: 'center',
               gap: 5,
               marginTop: 2,
             }}>
               <div style={{
                 height: 1,
-                width: 12,
+                width: 14,
                 background: 'linear-gradient(to right, transparent, #C9A84C)',
               }} />
               <span style={{
@@ -126,7 +141,7 @@ export default function Navbar() {
               </span>
               <div style={{
                 height: 1,
-                width: 12,
+                width: 14,
                 background: 'linear-gradient(to left, transparent, #C9A84C)',
               }} />
             </div>
@@ -142,6 +157,7 @@ export default function Navbar() {
                 fontWeight: 400,
                 marginTop: 2,
                 textTransform: 'none',
+                textAlign: 'center',
               }}
             >
               by Amaran Integral Service LLC
@@ -183,7 +199,7 @@ export default function Navbar() {
                 display: 'inline-block',
                 padding: '9px 20px',
                 backgroundColor: ctaHovered ? '#a8893a' : '#C9A84C',
-                color: '#ffffff',
+                color: '#0a0a0a',
                 fontFamily: 'var(--font-body)',
                 fontSize: 11,
                 fontWeight: 700,
@@ -311,7 +327,7 @@ export default function Navbar() {
               width: '100%',
               padding: '14px',
               backgroundColor: mobileCTAHovered ? '#a8893a' : '#C9A84C',
-              color: '#ffffff',
+              color: '#0a0a0a',
               fontFamily: 'var(--font-body)',
               fontSize: 11,
               fontWeight: 700,
@@ -348,7 +364,7 @@ function NavLink({ href, children }: { href: string; children: string }) {
         fontWeight: 500,
         letterSpacing: '0.14em',
         textTransform: 'uppercase',
-        color: hovered ? '#ffffff' : 'rgba(158,155,149,1)',
+        color: hovered ? '#ffffff' : 'rgba(255,255,255,0.72)',
         textDecoration: 'none',
         transition: 'color 200ms',
       }}
