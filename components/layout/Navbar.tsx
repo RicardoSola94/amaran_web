@@ -52,12 +52,8 @@ export default function Navbar() {
   return (
     <>
       <style>{`
-        @media (max-width: 1023px) and (min-width: 768px) {
-          .navbar-logo-name { font-size: 13px !important; letter-spacing: 0.08em !important; }
-          .navbar-logo-tagline { display: none !important; }
-        }
-        @media (max-width: 767px) {
-          .navbar-logo-tagline { display: none !important; }
+        @media (max-width: 1023px) {
+          .navbar-logo-sub { display: none !important; }
         }
         .mobile-cta:hover, .mobile-cta:active { background-color: #a8893a !important; }
       `}</style>
@@ -75,36 +71,81 @@ export default function Navbar() {
           <a
             href="/"
             className="cursor-pointer"
-            style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: 1, flexShrink: 0 }}
+            style={{ textDecoration: 'none', flexShrink: 0 }}
           >
-            {/* Line 1 */}
-            <span
-              className="navbar-logo-name"
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 17,
-                letterSpacing: '0.12em',
+            {/* ZEBRA */}
+            <div style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: 15,
+              fontWeight: 700,
+              letterSpacing: '0.08em',
+              color: '#ffffff',
+              lineHeight: 1,
+              textTransform: 'uppercase',
+            }}>
+              ZEBRA
+            </div>
+
+            {/* BLINDS — dorado */}
+            <div style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: 15,
+              fontWeight: 700,
+              letterSpacing: '0.08em',
+              background: 'linear-gradient(180deg, #e8c96a 0%, #C9A84C 40%, #a8893a 70%, #C9A84C 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              lineHeight: 1,
+              textTransform: 'uppercase',
+            }}>
+              BLINDS
+            </div>
+
+            {/* TAMPA con líneas */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 5,
+              marginTop: 2,
+            }}>
+              <div style={{
+                height: 1,
+                width: 12,
+                background: 'linear-gradient(to right, transparent, #C9A84C)',
+              }} />
+              <span style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: 8,
+                fontWeight: 600,
+                letterSpacing: '0.22em',
                 color: '#ffffff',
-                lineHeight: 1,
-                whiteSpace: 'nowrap',
-              }}
-            >
-              ZEBRA BLINDS TAMPA
-            </span>
-            {/* Line 2 */}
-            <span
+                textTransform: 'uppercase',
+              }}>
+                TAMPA
+              </span>
+              <div style={{
+                height: 1,
+                width: 12,
+                background: 'linear-gradient(to left, transparent, #C9A84C)',
+              }} />
+            </div>
+
+            {/* by Amaran — subtexto */}
+            <div
+              className="navbar-logo-sub"
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 10,
-                letterSpacing: '0.06em',
-                color: 'rgba(158,155,149,0.75)',
+                fontSize: 8,
+                letterSpacing: '0.04em',
+                color: 'rgba(158,155,149,0.55)',
                 fontWeight: 400,
-                lineHeight: 1,
-                whiteSpace: 'nowrap',
+                marginTop: 2,
+                textTransform: 'none',
               }}
             >
               by Amaran Integral Service LLC
-            </span>
+            </div>
           </a>
 
           {/* ── CENTER NAV (desktop only) ── */}

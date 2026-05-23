@@ -29,25 +29,75 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div style={{ marginBottom: 16 }}>
-              <p style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 20,
-                letterSpacing: '0.12em',
+              {/* ZEBRA */}
+              <div style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 22,
+                fontWeight: 700,
+                letterSpacing: '0.08em',
                 color: '#ffffff',
                 lineHeight: 1,
-                marginBottom: 4,
+                textTransform: 'uppercase',
               }}>
-                ZEBRA BLINDS TAMPA
-              </p>
-              <p style={{
+                ZEBRA
+              </div>
+
+              {/* BLINDS — dorado */}
+              <div style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 22,
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                background: 'linear-gradient(180deg, #e8c96a 0%, #C9A84C 40%, #a8893a 70%, #C9A84C 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                lineHeight: 1,
+                textTransform: 'uppercase',
+              }}>
+                BLINDS
+              </div>
+
+              {/* TAMPA con líneas */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 5,
+                marginTop: 3,
+              }}>
+                <div style={{
+                  height: 1,
+                  width: 16,
+                  background: 'linear-gradient(to right, transparent, #C9A84C)',
+                }} />
+                <span style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: '0.22em',
+                  color: '#ffffff',
+                  textTransform: 'uppercase',
+                }}>
+                  TAMPA
+                </span>
+                <div style={{
+                  height: 1,
+                  width: 16,
+                  background: 'linear-gradient(to left, transparent, #C9A84C)',
+                }} />
+              </div>
+
+              {/* by Amaran — subtexto */}
+              <div style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 10,
-                letterSpacing: '0.06em',
-                color: 'rgba(158,155,149,0.65)',
+                fontSize: 9,
+                letterSpacing: '0.04em',
+                color: 'rgba(158,155,149,0.55)',
                 fontWeight: 400,
+                marginTop: 3,
               }}>
                 by Amaran Integral Service LLC
-              </p>
+              </div>
             </div>
             <p className="text-brand-gray-600 text-sm font-body italic mb-6">
               &ldquo;{t('footer_tagline') as string}&rdquo;
