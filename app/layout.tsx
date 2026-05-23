@@ -8,14 +8,14 @@ import './globals.css'
 const bebasNeue = Bebas_Neue({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-display-var',
+  variable: '--font-display',
   display: 'swap',
 })
 
 const dmSans = DM_Sans({
   weight: ['300', '400', '500', '600'],
   subsets: ['latin'],
-  variable: '--font-body-var',
+  variable: '--font-body',
   display: 'swap',
 })
 
@@ -23,7 +23,7 @@ const dmSerifDisplay = DM_Serif_Display({
   weight: ['400'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
-  variable: '--font-serif-var',
+  variable: '--font-serif',
   display: 'swap',
 })
 
