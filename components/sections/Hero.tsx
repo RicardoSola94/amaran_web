@@ -15,8 +15,8 @@ export default function Hero() {
         className="hero-section"
         style={{
           position: 'relative',
-          height: '100vh',
-          minHeight: '600px',
+          minHeight: '100vh',
+          height: 'auto',
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
@@ -76,7 +76,7 @@ export default function Hero() {
             {/* H1 */}
             <h1 style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(40px, 6vw, 96px)',
+              fontSize: 'clamp(28px, 8vw, 96px)',
               lineHeight: 0.92,
               letterSpacing: '0.02em',
               margin: '0 0 18px 0',
@@ -89,7 +89,7 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p style={{
+            <p className="hero-subtitle" style={{
               fontFamily: 'var(--font-body)',
               fontSize: 15,
               fontWeight: 300,
@@ -102,7 +102,7 @@ export default function Hero() {
             </p>
 
             {/* Trust badges */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
+            <div className="hero-badges" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
               {[
                 t('hero_badge_licensed') as string,
                 t('hero_badge_estimate') as string,
@@ -215,6 +215,10 @@ export default function Hero() {
           }
         }
         @media (max-width: 767px) {
+          .hero-section {
+            min-height: 85vh !important;
+            height: auto !important;
+          }
           .hero-overlay {
             background: linear-gradient(
               to bottom,
@@ -225,8 +229,15 @@ export default function Hero() {
           .hero-content {
             padding: 108px 24px 40px 24px !important;
           }
+          .hero-subtitle {
+            margin-bottom: 12px !important;
+          }
+          .hero-badges {
+            margin-bottom: 16px !important;
+          }
           .hero-ctas {
             flex-direction: column !important;
+            margin-bottom: 20px !important;
           }
           .hero-ctas a {
             width: 100% !important;
