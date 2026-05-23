@@ -29,6 +29,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
+          className="hero-bg-image"
           style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
         />
 
@@ -58,7 +59,7 @@ export default function Hero() {
           <div style={{ maxWidth: 600 }}>
 
             {/* Eyebrow */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+            <div className="hero-eyebrow" style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
               <div style={{ width: 24, height: 1, backgroundColor: '#C9A84C', flexShrink: 0 }} />
               <span style={{
                 fontFamily: 'var(--font-body)',
@@ -74,9 +75,9 @@ export default function Hero() {
             </div>
 
             {/* H1 */}
-            <h1 style={{
+            <h1 className="hero-h1" style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(28px, 8vw, 96px)',
+              fontSize: 'clamp(34px, 9vw, 96px)',
               lineHeight: 0.92,
               letterSpacing: '0.02em',
               margin: '0 0 18px 0',
@@ -183,7 +184,7 @@ export default function Hero() {
             </div>
 
             {/* Google Reviews badge */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }}>
+            <div className="hero-reviews" style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }}>
               <div style={{ display: 'flex', gap: 2 }}>
                 {[1, 2, 3, 4, 5].map(i => (
                   <svg key={i} width={13} height={13} viewBox="0 0 24 24" fill="#FBBC05" aria-hidden="true">
@@ -216,36 +217,66 @@ export default function Hero() {
         }
         @media (max-width: 767px) {
           .hero-section {
-            min-height: 85vh !important;
-            height: auto !important;
+            min-height: 100dvh !important;
+            height: 100dvh !important;
+            display: flex !important;
+            align-items: center !important;
+            overflow: hidden !important;
+          }
+          .hero-bg-image {
+            object-position: center 42% !important;
           }
           .hero-overlay {
             background: linear-gradient(
               to bottom,
-              rgba(10,10,10,0.75) 0%,
-              rgba(10,10,10,0.55) 100%
+              rgba(10,10,10,0.80) 0%,
+              rgba(10,10,10,0.60) 100%
             ) !important;
           }
           .hero-content {
-            padding: 108px 24px 40px 24px !important;
+            padding: 0 20px 86px 20px !important;
+            transform: translateY(10px);
+          }
+          .hero-eyebrow {
+            margin-bottom: 10px !important;
+          }
+          .hero-h1 {
+            font-size: clamp(28px, 7.4vw, 40px) !important;
+            line-height: 1 !important;
+            margin-bottom: 10px !important;
           }
           .hero-subtitle {
+            font-size: 13.5px !important;
+            line-height: 1.45 !important;
             margin-bottom: 12px !important;
           }
           .hero-badges {
-            margin-bottom: 16px !important;
+            margin-bottom: 14px !important;
+            gap: 6px !important;
+          }
+          .hero-badges span {
+            font-size: 9px !important;
+            padding: 4px 8px !important;
           }
           .hero-ctas {
             flex-direction: column !important;
-            margin-bottom: 20px !important;
+            margin-bottom: 12px !important;
+            gap: 8px !important;
           }
           .hero-ctas a {
             width: 100% !important;
             box-sizing: border-box !important;
             justify-content: center !important;
+            padding: 10px 18px !important;
           }
           .hero-ctas a:last-child {
             border-color: rgba(255,255,255,0.55) !important;
+          }
+          .hero-reviews {
+            margin-top: 4px !important;
+          }
+          .hero-reviews span {
+            font-size: 12px !important;
           }
         }
       `}</style>
