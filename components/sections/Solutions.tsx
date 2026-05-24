@@ -40,12 +40,12 @@ const solutions = [
     image: '/images/solutions/zipper-screens.png',
   },
   {
-    id: 'cable',
-    type: 'exterior' as SolutionType,
-    titleKey: 'sol_cable_title',
-    descKey: 'sol_cable_desc',
-    benefitKeys: ['sol_cable_b1', 'sol_cable_b2', 'sol_cable_b3'],
-    image: '/images/solutions/cable-guided-screens.jpeg',
+    id: 'translucent',
+    type: 'interior' as SolutionType,
+    titleKey: 'sol_translucent_title',
+    descKey: 'sol_translucent_desc',
+    benefitKeys: ['sol_translucent_b1', 'sol_translucent_b2', 'sol_translucent_b3'],
+    image: '/images/solutions/translucent-shades.jpeg',
   },
   {
     id: 'motorized',

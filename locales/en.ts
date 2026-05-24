@@ -18,9 +18,9 @@ const en = {
     'Custom zebra blinds, drapery, blackout shades, zipper screens and motorized screens — made to measure and installed in Tampa Bay.',
   hero_cta_primary: 'Get Free Estimate',
   hero_cta_secondary: 'View Our Work',
-  hero_badge_licensed: '✓ Licensed & Insured',
   hero_badge_estimate: '✓ Free In-Home Estimate',
-  hero_badge_response: '✓ Interior & Exterior',
+  hero_badge_custom: '✓ Made to Measure',
+  hero_badge_response: '✓ Tampa Bay Service',
   hero_stat_projects: '500+ Projects',
   hero_stat_projects_label: 'Completed',
   hero_stat_experience: '10+ Years',
@@ -29,8 +29,8 @@ const en = {
   hero_stat_rating_label: 'Customer Satisfaction',
 
   // Trust Bar
-  trust_1: 'Licensed & Insured',
-  trust_1_sub: 'Florida Certified',
+  trust_1: 'Made to Measure',
+  trust_1_sub: 'Custom fit solutions',
   trust_2: 'Free In-Home Estimate',
   trust_2_sub: 'No commitment needed',
   trust_3: 'Interior & Exterior',
@@ -167,14 +167,14 @@ const en = {
     'Retractable screens with a zipper-rail system that seals completely on every side. Blocks insects, wind, and rain in patios and lanais.',
   sol_zipper_b1: 'Zero gaps for insects',
   sol_zipper_b2: 'Wind and rain resistant',
-  sol_zipper_b3: 'Manual or motorized',
+  sol_zipper_b3: 'Motorized',
 
-  sol_cable_title: 'Cable-Guided Screens',
-  sol_cable_desc:
-    'Exterior retractable screens guided by side cables instead of a rail system. Clean look, smooth operation, ideal for large openings.',
-  sol_cable_b1: 'Side cable guide system',
-  sol_cable_b2: 'Ideal for large exterior openings',
-  sol_cable_b3: 'Clean look without visible rails',
+  sol_translucent_title: 'Translucent Shades',
+  sol_translucent_desc:
+    'Soft light-filtering shades that bring privacy while keeping your space bright and elegant.',
+  sol_translucent_b1: 'Filters natural light',
+  sol_translucent_b2: 'Adds privacy without total darkness',
+  sol_translucent_b3: 'Ideal for living rooms and offices',
 
   sol_motorized_title: 'Motorized Screens',
   sol_motorized_desc:
@@ -233,9 +233,9 @@ const en = {
 
   // Why Us
   whyus_eyebrow: 'Why Choose Us',
-  whyus_title: "We Don't Just Install Blinds — We Deliver Confidence",
+  whyus_title: 'Your Satisfaction Is Our Pleasure',
   whyus_subtitle:
-    'Four things that set us apart from every other screen installer in Tampa Bay.',
+    'Custom blinds, shades, and screens made to measure — with service focused on your comfort, style, and peace of mind.',
   whyus_1_title: 'Free In-Home Estimate',
   whyus_1_desc:
     'We come to you. No obligation, no pressure. We measure your space, explain your options, and give you a written quote on the spot.',
@@ -245,9 +245,9 @@ const en = {
   whyus_3_title: 'Bilingual Team, Local Service',
   whyus_3_desc:
     'Our team speaks English and Spanish. We serve Tampa Bay\'s Hispanic community with the same professional standard as every client.',
-  whyus_4_title: 'Satisfaction Guaranteed',
+  whyus_4_title: 'Satisfaction First',
   whyus_4_desc:
-    "Your Satisfaction is My Pleasure — it's not just our tagline. We don't consider a job done until you're fully happy with the result.",
+    "We don't consider the job done until you're happy with the result.",
 
   // Process
   process_eyebrow: 'How It Works',
@@ -417,7 +417,7 @@ const en = {
   form_service_drapery: 'Drapery',
   form_service_blackout: 'Blackout Shades',
   form_service_zipper: 'Zipper Screens',
-  form_service_cable: 'Cable-Guided Screens',
+  form_service_cable: 'Translucent Shades',
   form_service_motorized: 'Motorized Screens',
   form_service_not_sure: 'Not sure — help me choose',
   form_property_type: 'Property Type',
@@ -457,7 +457,7 @@ const en = {
   final_cta_whatsapp: 'WhatsApp Us',
 
   // Footer
-  footer_tagline: 'Your Satisfaction is My Pleasure',
+  footer_tagline: 'Your Satisfaction is Our Pleasure',
   footer_services_title: 'Services',
   footer_company_title: 'Company',
   footer_areas_title: 'Service Areas',

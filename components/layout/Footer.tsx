@@ -7,7 +7,7 @@ const services = [
   'sol_drapery_title',
   'sol_blackout_title',
   'sol_zipper_title',
-  'sol_cable_title',
+  'sol_translucent_title',
   'sol_motorized_title',
 ] as const
 

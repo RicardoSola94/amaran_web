@@ -16,7 +16,6 @@ export default function Hero() {
         style={{
           position: 'relative',
           minHeight: '100vh',
-          height: 'auto',
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
@@ -105,8 +104,8 @@ export default function Hero() {
             {/* Trust badges */}
             <div className="hero-badges" style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
               {[
-                t('hero_badge_licensed') as string,
                 t('hero_badge_estimate') as string,
+                t('hero_badge_custom') as string,
                 t('hero_badge_response') as string,
               ].map((badge) => (
                 <span key={badge} style={{
@@ -215,6 +214,7 @@ export default function Hero() {
             padding: 100px 32px 48px 32px !important;
           }
         }
+
         @media (max-width: 767px) {
           .hero-section {
             min-height: 100dvh !important;
@@ -223,60 +223,75 @@ export default function Hero() {
             align-items: center !important;
             overflow: hidden !important;
           }
+
           .hero-bg-image {
-            object-position: center 42% !important;
+            object-position: center 44% !important;
           }
+
           .hero-overlay {
             background: linear-gradient(
               to bottom,
               rgba(10,10,10,0.80) 0%,
-              rgba(10,10,10,0.60) 100%
+              rgba(10,10,10,0.62) 100%
             ) !important;
           }
+
           .hero-content {
-            padding: 0 20px 86px 20px !important;
-            transform: translateY(10px);
+            padding: 0 20px 94px 20px !important;
+            transform: translateY(2px);
           }
+
           .hero-eyebrow {
-            margin-bottom: 10px !important;
+            margin-bottom: 8px !important;
           }
+
           .hero-h1 {
-            font-size: clamp(28px, 7.4vw, 40px) !important;
-            line-height: 1 !important;
-            margin-bottom: 10px !important;
-          }
-          .hero-subtitle {
-            font-size: 13.5px !important;
-            line-height: 1.45 !important;
-            margin-bottom: 12px !important;
-          }
-          .hero-badges {
+            font-size: clamp(30px, 8vw, 42px) !important;
+            line-height: 1.06 !important;
+            letter-spacing: 0.01em !important;
             margin-bottom: 14px !important;
-            gap: 6px !important;
           }
+
+          .hero-subtitle {
+            font-size: 14px !important;
+            line-height: 1.55 !important;
+            margin-bottom: 16px !important;
+          }
+
+          .hero-badges {
+            margin-bottom: 16px !important;
+            gap: 8px !important;
+          }
+
           .hero-badges span {
             font-size: 9px !important;
             padding: 4px 8px !important;
           }
+
           .hero-ctas {
             flex-direction: column !important;
-            margin-bottom: 12px !important;
-            gap: 8px !important;
+            margin-bottom: 14px !important;
+            gap: 9px !important;
           }
+
           .hero-ctas a {
             width: 100% !important;
             box-sizing: border-box !important;
             justify-content: center !important;
-            padding: 10px 18px !important;
+            padding: 11px 18px !important;
           }
+
           .hero-ctas a:last-child {
             border-color: rgba(255,255,255,0.55) !important;
           }
+
           .hero-reviews {
-            margin-top: 4px !important;
+            margin-top: 6px !important;
+            gap: 8px !important;
           }
+
           .hero-reviews span {
-            font-size: 12px !important;
+            font-size: 11.5px !important;
           }
         }
       `}</style>

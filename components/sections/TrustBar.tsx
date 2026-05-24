@@ -10,8 +10,11 @@ const trustItems = [
       <svg width={16} height={16} viewBox="0 0 24 24" fill="none"
         stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"
         aria-hidden="true">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <polyline points="9 12 11 14 15 10"/>
+        <rect x="2" y="8" width="20" height="8" rx="1"/>
+        <line x1="6" y1="8" x2="6" y2="14"/>
+        <line x1="10" y1="8" x2="10" y2="12"/>
+        <line x1="14" y1="8" x2="14" y2="12"/>
+        <line x1="18" y1="8" x2="18" y2="14"/>
       </svg>
     ),
   },

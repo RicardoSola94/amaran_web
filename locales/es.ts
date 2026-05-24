@@ -18,9 +18,9 @@ const es = {
     'Zebra blinds, drapery, blackout shades, zipper screens y pantallas motorizadas — a medida e instaladas en Tampa Bay.',
   hero_cta_primary: 'Cotización Gratis',
   hero_cta_secondary: 'Ver Nuestro Trabajo',
-  hero_badge_licensed: '✓ Licenciados y Asegurados',
   hero_badge_estimate: '✓ Estimado Gratis en Casa',
-  hero_badge_response: '✓ Interior y Exterior',
+  hero_badge_custom: '✓ A Tu Medida',
+  hero_badge_response: '✓ Servicio Tampa Bay',
   hero_stat_projects: '500+ Proyectos',
   hero_stat_projects_label: 'Completados',
   hero_stat_experience: '10+ Años',
@@ -29,8 +29,8 @@ const es = {
   hero_stat_rating_label: 'Satisfacción del Cliente',
 
   // Trust Bar
-  trust_1: 'Licenciados y Asegurados',
-  trust_1_sub: 'Certificados en Florida',
+  trust_1: 'Hecho a Medida',
+  trust_1_sub: 'Soluciones personalizadas',
   trust_2: 'Estimado Gratis en Casa',
   trust_2_sub: 'Sin compromiso',
   trust_3: 'Interior y Exterior',
@@ -167,14 +167,14 @@ const es = {
     'Pantallas retráctiles con sistema de riel tipo zipper que sella completamente cada lado. Bloquea insectos, viento y lluvia en patios y lanais.',
   sol_zipper_b1: 'Cero espacios para insectos',
   sol_zipper_b2: 'Resistente al viento y lluvia',
-  sol_zipper_b3: 'Manual o motorizado',
+  sol_zipper_b3: 'Motorizado',
 
-  sol_cable_title: 'Cable-Guided Screens',
-  sol_cable_desc:
-    'Pantallas exteriores retráctiles guiadas por cables laterales en lugar de riel. Aspecto limpio, operación suave, ideal para aberturas grandes.',
-  sol_cable_b1: 'Sistema de guía por cable lateral',
-  sol_cable_b2: 'Ideal para grandes aberturas exteriores',
-  sol_cable_b3: 'Sin rieles visibles',
+  sol_translucent_title: 'Traslúcidos',
+  sol_translucent_desc:
+    'Cortinas traslúcidas que filtran la luz natural, aportan privacidad y mantienen el espacio claro y elegante.',
+  sol_translucent_b1: 'Filtran la luz natural',
+  sol_translucent_b2: 'Añaden privacidad sin oscurecer por completo',
+  sol_translucent_b3: 'Ideales para salas y oficinas',
 
   sol_motorized_title: 'Motorized Screens',
   sol_motorized_desc:
@@ -233,9 +233,9 @@ const es = {
 
   // Why Us
   whyus_eyebrow: 'Por Qué Elegirnos',
-  whyus_title: 'No Solo Instalamos — Entregamos Confianza',
+  whyus_title: 'Tu Satisfacción Es Mi Placer',
   whyus_subtitle:
-    'Cuatro cosas que nos distinguen de cualquier otro instalador de persianas en Tampa Bay.',
+    'Persianas, cortinas y pantallas hechas a medida — con un servicio enfocado en tu comodidad, estilo y tranquilidad.',
   whyus_1_title: 'Estimado Gratis en Tu Hogar',
   whyus_1_desc:
     'Vamos a donde estás. Sin obligación, sin presión. Medimos tu espacio, explicamos tus opciones y te damos una cotización escrita en el momento.',
@@ -245,9 +245,9 @@ const es = {
   whyus_3_title: 'Equipo Bilingüe, Servicio Local',
   whyus_3_desc:
     'Nuestro equipo habla inglés y español. Atendemos a la comunidad hispana de Tampa Bay con el mismo nivel profesional que a todos nuestros clientes.',
-  whyus_4_title: 'Satisfacción Garantizada',
+  whyus_4_title: 'Primero Tu Satisfacción',
   whyus_4_desc:
-    '"Tu satisfacción es mi placer" no es solo nuestro lema. No consideramos un trabajo terminado hasta que estés completamente satisfecho con el resultado.',
+    'No consideramos el trabajo terminado hasta que estés satisfecho con el resultado.',
 
   // Process
   process_eyebrow: 'Cómo Funciona',
@@ -418,7 +418,7 @@ const es = {
   form_service_drapery: 'Drapery',
   form_service_blackout: 'Blackout Shades',
   form_service_zipper: 'Zipper Screens',
-  form_service_cable: 'Cable-Guided Screens',
+  form_service_cable: 'Traslúcidos',
   form_service_motorized: 'Motorized Screens',
   form_service_not_sure: 'No estoy seguro — ayúdame a elegir',
   form_property_type: 'Tipo de Propiedad',
