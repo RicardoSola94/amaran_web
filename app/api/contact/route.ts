@@ -203,6 +203,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
 
+  // Turnstile verification
+  const { TURNSTILE_SECRET_KEY } = process.env
+  if (!TURNSTILE_SECRET_KEY) {
+    console.warn('TURNSTILE_SECRET_KEY not configured — skipping bot check')
+  } else {
+    const rawBody = body && typeof body === 'object' ? body as Record<string, unknown> : {}
+    const turnstileToken = typeof rawBody.turnstileToken === 'string' ? rawBody.turnstileToken : null
+    if (!turnstileToken) {
+      return NextResponse.json({ error: 'Security check failed' }, { status: 400 })
+    }
+    const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret: TURNSTILE_SECRET_KEY, response: turnstileToken }),
+    })
+    const verifyData = await verifyRes.json() as { success: boolean }
+    if (!verifyData.success) {
+      return NextResponse.json({ error: 'Security check failed' }, { status: 400 })
+    }
+  }
+
   if (!validatePayload(body)) {
     return NextResponse.json(
       { error: 'Missing or invalid required fields' },

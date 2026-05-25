@@ -2,11 +2,16 @@
 
 import { useState } from 'react'
 import { Form, Input, Select, Radio, Button, notification } from 'antd'
+import { Turnstile } from '@marsidev/react-turnstile'
 import { useLanguage } from '@/context/LanguageContext'
 import SectionHeader from '@/components/ui/SectionHeader'
 import type { LeadFormData } from '@/types'
 
 const { TextArea } = Input
+
+if (!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) {
+  console.warn('NEXT_PUBLIC_TURNSTILE_SITE_KEY is not set — bot protection disabled')
+}
 
 const faqItems = [
   { qKey: 'faq_q1' as const, aKey: 'faq_a1' as const },
@@ -19,6 +24,7 @@ export default function ContactForm() {
   const [form] = Form.useForm<LeadFormData>()
   const [loading, setLoading] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null)
 
   async function handleSubmit(values: LeadFormData) {
     setLoading(true)
@@ -26,7 +32,7 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...values, language }),
+        body: JSON.stringify({ ...values, language, turnstileToken }),
       })
 
       if (!res.ok) throw new Error('Server error')
@@ -37,6 +43,7 @@ export default function ContactForm() {
         duration: 8,
       })
       form.resetFields()
+      setTurnstileToken(null)
     } catch {
       notification.error({
         message: t('form_error_title') as string,
@@ -252,6 +259,17 @@ export default function ContactForm() {
                 />
               </Form.Item>
 
+              {/* Turnstile */}
+              {process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && (
+                <Turnstile
+                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                  onSuccess={(token) => setTurnstileToken(token)}
+                  onError={() => setTurnstileToken(null)}
+                  onExpire={() => setTurnstileToken(null)}
+                  options={{ theme: 'light' }}
+                />
+              )}
+
               {/* Submit */}
               <Form.Item className="mb-0">
                 <Button
@@ -259,7 +277,7 @@ export default function ContactForm() {
                   htmlType="submit"
                   size="large"
                   loading={loading}
-                  disabled={loading}
+                  disabled={!turnstileToken || loading}
                   className="w-full"
                   style={{
                     backgroundColor: '#C9A84C',
