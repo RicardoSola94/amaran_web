@@ -48,16 +48,16 @@ const es = {
     'La tela se desliza dentro de un canal en los cuatro lados, creando un sello sin espacios. Cero insectos, cero filtraciones de luz, cero infiltración de viento.',
   zipper_point_2_title: 'Se Retrae Cuando No lo Necesitas',
   zipper_point_2_desc:
-    'Cuando quieres aire libre, la persiana se enrolla limpiamente en un compartimiento compacto. Despliégala en segundos con una correa o motor eléctrico.',
-  zipper_point_3_title: 'Manual o Motorizado',
+    'Cuando quieres aire libre, la persiana se enrolla limpiamente en un compartimiento compacto. Despliégala en segundos con un motor eléctrico silencioso.',
+  zipper_point_3_title: 'Control Motorizado',
   zipper_point_3_desc:
-    'Los sistemas manuales usan manivela o correa. Los motorizados tienen un motor eléctrico silencioso controlado por control remoto, app de smartphone o sistemas de hogar inteligente como Alexa y Google Home.',
+    'Un motor eléctrico silencioso controlado por control remoto, app de smartphone o sistemas de hogar inteligente como Alexa y Google Home.',
   zipper_point_4_title: 'Hecho a Medida para Cualquier Abertura',
   zipper_point_4_desc:
     'Cada Zipper Screen se fabrica a tus medidas exactas. Patio, lanai, porche, balcón, terraza de restaurante o local comercial — si hay una abertura, la cubrimos.',
   zipper_cta: 'Solicita Medición Gratis',
   zipper_body_2:
-    'Cuando no la necesitas, se enrolla completamente fuera de la vista. Cuando está desplegada, crea un espacio exterior completamente cerrado y protegido — sin insectos, sin sol intenso, sin viento. Disponible con manivela manual o motorizado con control remoto o app.',
+    'Cuando no la necesitas, se enrolla completamente fuera de la vista. Cuando está desplegada, crea un espacio exterior completamente cerrado y protegido — sin insectos, sin sol intenso, sin viento. Disponible motorizado con control remoto o app.',
   zipper_features_eyebrow: '4 Diferencias Clave',
   zipper_features_title: 'Qué la Hace Diferente',
   zipper_stat_1_title: 'PROTECCIÓN CONTRA INSECTOS',
@@ -87,7 +87,7 @@ const es = {
     'Zebra Blinds, Shade Screens, Blackout Blinds y Zipper Screens — todo fabricado a tus medidas exactas.',
   service_zipper_title: 'Zipper Screens',
   service_zipper_desc:
-    'Persianas retráctiles con sistema de riel tipo zipper patentado que sella completamente los cuatro lados. Bloquea insectos, viento y lluvia. Manual o motorizado.',
+    'Persianas retráctiles con sistema de riel tipo zipper patentado que sella completamente los cuatro lados. Bloquea insectos, viento y lluvia. Motorizado con control remoto.',
   service_shade_title: 'Shade Screens',
   service_shade_desc:
     'Persianas de tela solar que bloquean los rayos UV y reducen el calor manteniendo visibilidad hacia el exterior. Perfectas para patios, lanais y ventanas grandes.',
@@ -105,7 +105,7 @@ const es = {
     'Instalaciones de gran formato para restaurantes, hoteles, oficinas y condominios. Manejamos diseños complejos y pedidos en cantidad con gestión de proyecto profesional.',
   service_zipper_f1: 'Sello de riel tipo zipper',
   service_zipper_f2: 'Cero espacios para insectos',
-  service_zipper_f3: 'Manual o motorizado',
+  service_zipper_f3: 'Control motorizado',
   service_zipper_f4: 'A medida para cualquier abertura',
   service_shade_f1: 'Bloquea hasta el 95% de UV',
   service_shade_f2: 'Reduce la acumulación de calor',
@@ -273,14 +273,10 @@ const es = {
   // Materials & Options
   materials_eyebrow: 'Materiales y Opciones',
   materials_title: 'Elige el Sistema que se Adapta a Tu Vida',
-  materials_manual_label: 'Opción 01',
-  materials_manual_title: 'Sistemas Manuales',
-  materials_manual_desc:
-    'Se operan con manivela o correa. Confiables, sin necesidad de electricidad, menor costo. Ideales para aberturas pequeñas o ubicaciones sin acceso a corriente.',
-  materials_motorized_label: 'Opción 02',
+  materials_motorized_label: 'Opción 01',
   materials_motorized_title: 'Sistemas Motorizados',
   materials_motorized_desc:
-    'Motor eléctrico silencioso con múltiples opciones de control: control remoto de mano, interruptor de pared, app de smartphone o integración con hogar inteligente (Alexa, Google Home, SmartThings). Ideal para aberturas grandes o instalaciones premium.',
+    'Todos nuestros productos vienen con motores eléctricos silenciosos. Controla con control remoto, app o sistema de smart home.',
   materials_fabric_title: 'Opciones de Tela',
   materials_fabric_1: 'Tela Solar — 5% apertura (alta privacidad, sombra máxima)',
   materials_fabric_2:
@@ -361,18 +357,18 @@ const es = {
   faq_title: 'Preguntas Frecuentes',
   faq_subtitle:
     'Todo lo que quieres saber antes de solicitar tu estimado gratis.',
-  faq_q1: '¿Cuánto cuestan los Zipper Screens en Tampa?',
+  faq_q1: '¿El estimado es realmente gratis?',
   faq_a1:
-    'El costo depende del tamaño de la abertura, el tipo de tela y si eliges sistema manual o motorizado. Un Zipper Screen residencial estándar para un patio comienza alrededor de $800–$1,500. Los sistemas motorizados son más. Te damos un estimado gratis sin obligación — llámanos al (813) 279-3943.',
-  faq_q2: '¿Cuánto tiempo tarda la instalación?',
+    'Sí. Vamos a tu hogar o negocio, medimos y te damos una cotización sin costo y sin compromiso.',
+  faq_q2: '¿Trabajan interiores y exteriores?',
   faq_a2:
-    'La mayoría de las instalaciones residenciales se completan en un día. Desde que apruebas tu cotización, la fabricación toma aproximadamente 2–3 semanas. La instalación en sí dura típicamente 3–6 horas según el número y tamaño de las persianas.',
-  faq_q3: '¿Cuál es la diferencia entre un Zipper Screen y una persiana regular?',
+    'Sí. Instalamos zebra blinds, blackout blinds y shade screens en interiores, y zipper screens, motorized screens y patio screens en exteriores.',
+  faq_q3: '¿Tienen opciones motorizadas?',
   faq_a3:
-    'Una persiana retráctil estándar deja pequeños espacios en los bordes donde la tela se encuentra con el marco. Un Zipper Screen usa un sistema de riel tipo zipper patentado que bloquea la tela en un canal en los cuatro lados, creando un sello completo. Esto significa cero insectos, cero filtraciones de luz y mucha mejor resistencia al viento — especialmente importante con el clima de Florida.',
+    'Sí. Todos nuestros productos son motorizados, con control remoto, app o integración con smart home.',
   faq_q4: '¿Los Zipper Screens pueden ser motorizados?',
   faq_a4:
-    'Sí. Todos nuestros sistemas de persianas están disponibles en versiones manuales o motorizadas. Los Zipper Screens motorizados se pueden controlar por control remoto, interruptor de pared, app de smartphone o integrarse con sistemas de hogar inteligente como Alexa, Google Home o Apple HomeKit.',
+    'Sí. Todos nuestros sistemas de persianas son motorizados. Se pueden controlar por control remoto, interruptor de pared, app de smartphone o integrarse con sistemas de hogar inteligente como Alexa, Google Home o Apple HomeKit.',
   faq_q5: '¿Atienden toda Florida?',
   faq_a5:
     'Nuestra área principal es el Gran Tampa Bay incluyendo Tampa, Brandon, Riverview, St. Petersburg, Clearwater, Sarasota y ciudades cercanas. Para proyectos comerciales e instalaciones residenciales grandes, atendemos clientes en toda Florida. Contáctanos para confirmar disponibilidad.',
@@ -418,9 +414,9 @@ const es = {
   form_service_drapery: 'Drapery',
   form_service_blackout: 'Blackout Shades',
   form_service_zipper: 'Zipper Screens',
-  form_service_cable: 'Traslúcidos',
+  form_service_translucent: 'Translucent Shades',
   form_service_motorized: 'Motorized Screens',
-  form_service_not_sure: 'No estoy seguro — ayúdame a elegir',
+  form_service_not_sure: 'No estoy seguro/a',
   form_property_type: 'Tipo de Propiedad',
   form_property_residential: 'Residencial',
   form_property_commercial: 'Comercial',
@@ -448,6 +444,7 @@ const es = {
   form_required: 'Este campo es obligatorio',
   form_email_invalid: 'Por favor ingresa un correo electrónico válido',
   form_privacy_note: 'Sin spam. Solo te contactamos para tu cotización.',
+  form_consent: 'Al enviar este formulario aceptas nuestros Términos y Política de Privacidad.',
 
   // Final CTA
   final_cta_eyebrow: '¿Listo para Transformar Tu Espacio?',

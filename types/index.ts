@@ -4,20 +4,18 @@ export interface LeadFormData {
   fullName: string
   phone: string
   email?: string
-  preferredContact: 'call' | 'whatsapp' | 'email'
   serviceType:
-    | 'zipper_screen'
-    | 'shade_screen'
     | 'zebra_blinds'
-    | 'blackout_blinds'
-    | 'motorized'
-    | 'commercial'
+    | 'drapery'
+    | 'blackout_shades'
+    | 'zipper_screens'
+    | 'translucent_shades'
+    | 'motorized_screens'
     | 'not_sure'
   propertyType?: 'residential' | 'commercial'
   city: string
   projectDescription?: string
   preferredLanguage?: 'en' | 'es'
-  bestTime?: 'morning' | 'afternoon' | 'evening' | 'anytime'
   language: Language
 }
 

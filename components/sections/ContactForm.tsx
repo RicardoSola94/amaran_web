@@ -12,7 +12,6 @@ const faqItems = [
   { qKey: 'faq_q1' as const, aKey: 'faq_a1' as const },
   { qKey: 'faq_q2' as const, aKey: 'faq_a2' as const },
   { qKey: 'faq_q3' as const, aKey: 'faq_a3' as const },
-  { qKey: 'faq_q4' as const, aKey: 'faq_a4' as const },
 ]
 
 export default function ContactForm() {
@@ -131,7 +130,8 @@ export default function ContactForm() {
           </div>
 
           {/* Form */}
-          <div className="contact-form-card lg:col-span-2 bg-brand-white rounded-lg p-8 border border-brand-gray-200" style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}>
+          <div className="lg:col-span-2 contact-form-wrapper">
+            <div className="contact-form-card bg-brand-white rounded-lg p-8 border border-brand-gray-200" style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}>
             <Form
               form={form}
               layout="vertical"
@@ -182,77 +182,36 @@ export default function ContactForm() {
                 </Form.Item>
               </div>
 
-              {/* Preferred Contact */}
+              {/* Service Type */}
               <Form.Item
-                name="preferredContact"
-                label={t('form_preferred_contact') as string}
+                name="serviceType"
+                label={t('form_service_type') as string}
                 rules={[required]}
               >
                 <Select size="large" placeholder="—">
-                  <Select.Option value="call">
-                    {t('form_contact_call') as string}
+                  <Select.Option value="zebra_blinds">
+                    {t('form_service_zebra') as string}
                   </Select.Option>
-                  <Select.Option value="whatsapp">
-                    {t('form_contact_whatsapp') as string}
+                  <Select.Option value="drapery">
+                    {t('form_service_drapery') as string}
                   </Select.Option>
-                  <Select.Option value="email">
-                    {t('form_contact_email') as string}
+                  <Select.Option value="blackout_shades">
+                    {t('form_service_blackout') as string}
+                  </Select.Option>
+                  <Select.Option value="zipper_screens">
+                    {t('form_service_zipper') as string}
+                  </Select.Option>
+                  <Select.Option value="translucent_shades">
+                    {t('form_service_translucent') as string}
+                  </Select.Option>
+                  <Select.Option value="motorized_screens">
+                    {t('form_service_motorized') as string}
+                  </Select.Option>
+                  <Select.Option value="not_sure">
+                    {t('form_service_not_sure') as string}
                   </Select.Option>
                 </Select>
               </Form.Item>
-
-              {/* Service Type + Best Time */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-                <Form.Item
-                  name="serviceType"
-                  label={t('form_service_type') as string}
-                  rules={[required]}
-                >
-                  <Select size="large" placeholder="—">
-                    <Select.Option value="zebra_blinds">
-                      {t('form_service_zebra') as string}
-                    </Select.Option>
-                    <Select.Option value="drapery">
-                      {t('form_service_drapery') as string}
-                    </Select.Option>
-                    <Select.Option value="blackout_shades">
-                      {t('form_service_blackout') as string}
-                    </Select.Option>
-                    <Select.Option value="zipper_screens">
-                      {t('form_service_zipper') as string}
-                    </Select.Option>
-                    <Select.Option value="cable_guided">
-                      {t('form_service_cable') as string}
-                    </Select.Option>
-                    <Select.Option value="motorized_screens">
-                      {t('form_service_motorized') as string}
-                    </Select.Option>
-                    <Select.Option value="not_sure">
-                      {t('form_service_not_sure') as string}
-                    </Select.Option>
-                  </Select>
-                </Form.Item>
-
-                <Form.Item
-                  name="bestTime"
-                  label={t('form_best_time') as string}
-                >
-                  <Select size="large" placeholder="—" allowClear>
-                    <Select.Option value="morning">
-                      {t('form_time_morning') as string}
-                    </Select.Option>
-                    <Select.Option value="afternoon">
-                      {t('form_time_afternoon') as string}
-                    </Select.Option>
-                    <Select.Option value="evening">
-                      {t('form_time_evening') as string}
-                    </Select.Option>
-                    <Select.Option value="anytime">
-                      {t('form_time_anytime') as string}
-                    </Select.Option>
-                  </Select>
-                </Form.Item>
-              </div>
 
               {/* Property Type + City */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
@@ -329,16 +288,10 @@ export default function ContactForm() {
                 {t('form_privacy_note') as string}
               </p>
               <p style={{ fontSize: 11, color: 'rgba(90,87,82,0.50)', textAlign: 'center', marginTop: 8 }}>
-                By submitting this form you agree to our{' '}
-                <a href="/terms" style={{ color: '#C9A84C' }}>
-                  Terms
-                </a>
-                {' '}and{' '}
-                <a href="/privacy" style={{ color: '#C9A84C' }}>
-                  Privacy Policy
-                </a>.
+                {t('form_consent') as string}
               </p>
             </Form>
+          </div>
           </div>
         </div>
 
@@ -415,7 +368,7 @@ export default function ContactForm() {
           .contact-section { padding: 80px 0 !important; }
           .contact-container { padding: 0 32px !important; }
           .contact-info { order: 2 !important; }
-          .contact-form-card { order: 1 !important; }
+          .contact-form-wrapper { order: 1 !important; }
         }
         @media (max-width: 767px) {
           .contact-section { padding: 64px 0 !important; }

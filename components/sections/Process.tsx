@@ -132,28 +132,7 @@ export default function Process() {
           marginTop: 64,
           paddingTop: 48,
           borderTop: '1px solid rgba(0,0,0,0.08)',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 24,
-        }} className="materials-grid">
-
-          {/* Manual */}
-          <div style={{
-            background: '#ffffff',
-            border: '1px solid #e2e0dc',
-            borderRadius: 4,
-            padding: '28px 24px',
-          }}>
-            <div style={{ color: '#C9A84C', fontFamily: 'var(--font-display)', fontSize: 13, letterSpacing: '0.1em', marginBottom: 12 }}>
-              {t('materials_manual_label') as string}
-            </div>
-            <div style={{ color: '#0a0a0a', fontFamily: 'var(--font-display)', fontSize: 22, marginBottom: 10 }}>
-              {t('materials_manual_title') as string}
-            </div>
-            <div style={{ color: '#5a5752', fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 300, lineHeight: 1.65 }}>
-              {t('materials_manual_desc') as string}
-            </div>
-          </div>
+        }}>
 
           {/* Motorized */}
           <div style={{
@@ -178,7 +157,6 @@ export default function Process() {
       <style>{`
         .process-section { padding: 96px 0; }
         .process-container { max-width: 1280px; margin: 0 auto; padding: 0 64px; }
-        .materials-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 1023px) {
           .process-section { padding: 80px 0 !important; }
           .process-container { padding: 0 32px !important; }
@@ -186,7 +164,6 @@ export default function Process() {
         @media (max-width: 767px) {
           .process-section { padding: 64px 0 !important; }
           .process-container { padding: 0 24px !important; }
-          .materials-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
         }
       `}</style>
     </section>

@@ -127,30 +127,30 @@ The site must avoid:
 |---|---|---|
 | Charcoal/Black | `#0a0a0a` / `#121212` / `#1a1a1a` | Hero, Navbar, Footer, dark sections, high-impact CTAs |
 | White/Light Gray | `#ffffff` / `#f7f7f5` / `#f0efed` | Service sections, Gallery, Testimonials, Forms |
-| AIS Red | `#d42b2b` / `#b01f1f` | Buttons, icons, emphasis lines, hover states, CTAs |
+| AIS Gold | `#C9A84C` | Buttons, icons, emphasis lines, hover states, CTAs, FAQ toggle, accent links |
 | Warm Gray | `#9e9b95` / `#5a5752` / `#d9d9d9` | Borders, dividers, secondary text, card details |
 
 **Color proportion:**
 - 60% white / light gray
 - 25% charcoal / black
-- 10% AIS Red
+- 10% AIS Gold
 - 5% warm gray accents
 
-Do NOT use red as a full section background unless it's a very specific accent strip.
+Do NOT use gold as a full section background — accent only (buttons, icons, lines).
 Do NOT use blue as a UI color — blue stays inside the logo only.
 
 ### Section Color Rhythm (alternating for visual breath)
 ```
-Navbar        → Dark (#0a0a0a)
-Hero          → Dark + full-bleed photo
-TrustBar      → Dark subtle (#0e0e0e)
-Solutions     → Light (#f0efed) — cards dark on light
-WhyUs         → Dark (#0a0a0a)
-Process       → Light (#f0efed)
-Gallery       → Light (#f0efed)
-Testimonials  → Dark subtle (#111111)
-ContactForm   → Light (#f0efed)
-Footer        → Dark (#0a0a0a)
+Navbar        → Dark (#0a0a0a) — logo + nav links + gold "Free Estimate" button
+Hero          → Dark (#0a0a0a) + full-bleed photo overlay
+TrustBar      → Dark subtle (#0e0e0e) — white text, gold icons
+Solutions     → Light (#f0efed) — dark cards on light background, gold CTA buttons
+WhyUs         → Dark (#0a0a0a) — white text, gold accent lines
+Process       → Light (#f7f7f5) — dark text, gold step numbers
+Gallery       → Light (#f0efed) — dark overlay on hover, gold CTA button
+Testimonials  → Dark subtle (#111111) — white text, gold stars
+ContactForm   → Light (#f0efed) — white form card, gold submit button
+Footer        → Dark (#0a0a0a) — white/gray text, gold hover on links
 ```
 
 ### Typography
@@ -162,7 +162,7 @@ Footer        → Dark (#0a0a0a)
 
 ### Logo
 - File: `/public/images/logo/ais-logo.png` *(to be provided by client)*
-- Colors: Red, black, gray
+- Colors: Gold, black, gray
 - Text: "AMARAN INTEGRAL SERVICE LLC"
 - Tagline: "Your Satisfaction is My Pleasure"
 
@@ -229,7 +229,7 @@ Sections that repeat the same message or audience have been merged or removed.
 - Subtitle: "Zebra blinds, blackout blinds, zipper screens y persianas motorizadas — a medida e instaladas en Tampa Bay."
 
 ### 3. TrustBar
-4 trust signals — dark background, SVG icons in red circles:
+4 trust signals — dark background, SVG icons in gold circles:
 
 | EN | ES |
 |---|---|
@@ -370,9 +370,11 @@ Contact info alongside:
 ## Lead Form API
 1. Validate required fields client-side (Ant Design rules)
 2. POST to `/api/contact`
-3. Server sends email to business owner
-4. Show success/error via Ant Design notification
-5. On success: reset form + show confirmation
+3. Server validates payload server-side before sending any email
+4. Server sends **Email 1** to business owner (`LEAD_EMAIL_TO`) — subject: `New Lead - [Service Type] - [City]`
+5. If client provided email — server sends **Email 2** to client: bilingual (EN/ES) confirmation with service type, city, and contact info
+6. Show success/error via Ant Design notification
+7. On success: reset form + show confirmation
 
 ---
 

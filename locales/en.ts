@@ -48,16 +48,16 @@ const en = {
     'The screen fabric slides into a channel on all four sides, creating a gap-free seal. No insects, no light leaks, no wind infiltration.',
   zipper_point_2_title: 'Retractable When Not Needed',
   zipper_point_2_desc:
-    'When you want open air, the screen rolls up cleanly into a compact housing. Deploy it in seconds with a pull strap or electric motor.',
-  zipper_point_3_title: 'Manual or Motorized',
+    'When you want open air, the screen rolls up cleanly into a compact housing. Deploy it in seconds with a quiet electric motor.',
+  zipper_point_3_title: 'Motorized Control',
   zipper_point_3_desc:
-    'Manual versions use a hand crank or pull strap. Motorized versions use a quiet electric motor controlled by remote, smartphone app, or smart home systems like Alexa and Google Home.',
+    'A quiet electric motor controlled by remote, smartphone app, or smart home systems like Alexa and Google Home.',
   zipper_point_4_title: 'Custom Made to Fit Any Opening',
   zipper_point_4_desc:
     'Every Zipper Screen is fabricated to your exact measurements. Patio, lanai, porch, balcony, restaurant terrace, or commercial storefront — if there\'s an opening, we can screen it.',
   zipper_cta: 'Get a Free Measurement',
   zipper_body_2:
-    "When you don't need it, it rolls up completely out of sight. When deployed, it creates a fully enclosed, protected outdoor space — no insects, no harsh sun, no wind. Available with manual crank or motorized with remote or smartphone control.",
+    "When you don't need it, it rolls up completely out of sight. When deployed, it creates a fully enclosed, protected outdoor space — no insects, no harsh sun, no wind. Available with motorized control via remote or smartphone app.",
   zipper_features_eyebrow: '4 Key Differences',
   zipper_features_title: 'What Makes It Different',
   zipper_stat_1_title: 'INSECT PROTECTION',
@@ -87,7 +87,7 @@ const en = {
     'Zebra Blinds, Shade Screens, Blackout Blinds & Zipper Screens — everything custom made to your exact measurements.',
   service_zipper_title: 'Zipper Screens',
   service_zipper_desc:
-    'Retractable screens with a patented zipper-track edge that seals completely on all four sides. Blocks insects, wind, and rain. Manual or motorized.',
+    'Retractable screens with a patented zipper-track edge that seals completely on all four sides. Blocks insects, wind, and rain. Motorized with remote control.',
   service_shade_title: 'Shade Screens',
   service_shade_desc:
     'Solar fabric screens that block UV rays and reduce heat while maintaining outside visibility. Perfect for patios, lanais, and large windows.',
@@ -105,7 +105,7 @@ const en = {
     'Large-format installations for restaurants, hotels, offices, and condominiums. We handle complex layouts and bulk orders with professional project management.',
   service_zipper_f1: 'Zipper-track edge seal',
   service_zipper_f2: 'Zero insect gaps',
-  service_zipper_f3: 'Manual or motorized',
+  service_zipper_f3: 'Motorized control',
   service_zipper_f4: 'Custom to any opening',
   service_shade_f1: 'Blocks up to 95% UV',
   service_shade_f2: 'Reduces heat buildup',
@@ -273,14 +273,10 @@ const en = {
   // Materials & Options
   materials_eyebrow: 'Materials & Options',
   materials_title: 'Choose the System That Fits Your Life',
-  materials_manual_label: 'Option 01',
-  materials_manual_title: 'Manual Systems',
-  materials_manual_desc:
-    'Operated with a hand crank or pull strap. Reliable, no electricity required, lower cost. Ideal for smaller openings or locations without power access.',
-  materials_motorized_label: 'Option 02',
+  materials_motorized_label: 'Option 01',
   materials_motorized_title: 'Motorized Systems',
   materials_motorized_desc:
-    'Quiet electric motor with multiple control options: handheld remote, wall switch, smartphone app, or smart home integration (Alexa, Google Home, SmartThings). Ideal for larger openings or premium installations.',
+    'All our products come with quiet electric motors. Control with a remote, smartphone app, or smart home system.',
   materials_fabric_title: 'Fabric Options',
   materials_fabric_1: 'Solar Screen — 5% openness (high privacy, maximum shade)',
   materials_fabric_2: 'Solar Screen — 10% openness (balanced light and privacy)',
@@ -360,18 +356,18 @@ const en = {
   faq_title: 'Frequently Asked Questions',
   faq_subtitle:
     'Everything you want to know before requesting your free estimate.',
-  faq_q1: 'How much do zipper screens cost in Tampa?',
+  faq_q1: 'Is the estimate really free?',
   faq_a1:
-    'The cost depends on the size of the opening, fabric type, and whether you choose manual or motorized operation. A standard residential zipper screen for a patio starts around $800–$1,500. Motorized systems start higher. We provide a free in-home estimate with no obligation — call us at (813) 279-3943 to schedule.',
-  faq_q2: 'How long does installation take?',
+    'Yes. We come to your home or business, measure, and give you a quote with no cost and no obligation.',
+  faq_q2: 'Do you work on both interior and exterior?',
   faq_a2:
-    'Most residential installations are completed in one day. From the time you approve your quote, fabrication takes approximately 2–3 weeks. Installation itself is typically 3–6 hours depending on the number and size of screens.',
-  faq_q3: 'What is the difference between a zipper screen and a regular screen?',
+    'Yes. We install zebra blinds, blackout blinds and shade screens inside, and zipper screens, motorized screens and patio screens outside.',
+  faq_q3: 'Do you offer motorized options?',
   faq_a3:
-    'A standard retractable screen leaves small gaps at the edges where the fabric meets the frame. A Zipper Screen uses a patented zipper-track system that locks the fabric into a channel on all four sides, creating a complete seal. This means no insects, no light leaks, and much better wind resistance — especially important in Florida weather.',
+    'Yes. All our products are motorized, with remote control, app, or smart home integration.',
   faq_q4: 'Can zipper screens be motorized?',
   faq_a4:
-    'Yes. All of our screen systems are available in manual or motorized versions. Motorized Zipper Screens can be controlled by handheld remote, wall switch, smartphone app, or integrated with smart home systems like Alexa, Google Home, or Apple HomeKit.',
+    'Yes. All of our screen systems are motorized. They can be controlled by handheld remote, wall switch, smartphone app, or integrated with smart home systems like Alexa, Google Home, or Apple HomeKit.',
   faq_q5: 'Do you serve all of Florida?',
   faq_a5:
     'Our primary service area is the Greater Tampa Bay region including Tampa, Brandon, Riverview, St. Petersburg, Clearwater, Sarasota, and surrounding cities. For commercial projects and larger residential installations, we serve clients across all of Florida. Contact us to confirm availability.',
@@ -417,9 +413,9 @@ const en = {
   form_service_drapery: 'Drapery',
   form_service_blackout: 'Blackout Shades',
   form_service_zipper: 'Zipper Screens',
-  form_service_cable: 'Translucent Shades',
+  form_service_translucent: 'Translucent Shades',
   form_service_motorized: 'Motorized Screens',
-  form_service_not_sure: 'Not sure — help me choose',
+  form_service_not_sure: 'Not sure',
   form_property_type: 'Property Type',
   form_property_residential: 'Residential',
   form_property_commercial: 'Commercial',
@@ -446,6 +442,7 @@ const en = {
   form_required: 'This field is required',
   form_email_invalid: 'Please enter a valid email address',
   form_privacy_note: "No spam. We'll only contact you about your quote.",
+  form_consent: 'By submitting this form you agree to our Terms and Privacy Policy.',
 
   // Final CTA
   final_cta_eyebrow: 'Ready to Transform Your Space?',
