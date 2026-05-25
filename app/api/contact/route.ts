@@ -34,7 +34,7 @@ function buildOwnerEmailHtml(data: LeadFormData): string {
   <div style="background:#ffffff;border-radius:8px;padding:32px;max-width:600px;margin:0 auto;">
 
     <div style="background:#C9A84C;color:#ffffff;padding:20px 32px;border-radius:8px 8px 0 0;margin:-32px -32px 24px;">
-      <p style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;opacity:0.85;">New Lead — Amaran Integral Service</p>
+      <p style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;opacity:0.85;">New Lead — Zebra Blinds Tampa</p>
       <h1 style="margin:6px 0 0;font-size:22px;font-weight:700;">${data.fullName}</h1>
       <span style="display:inline-block;background:rgba(255,255,255,0.15);padding:4px 10px;border-radius:4px;font-size:12px;margin-top:8px;">${timestamp} (ET)</span>
     </div>
@@ -103,7 +103,7 @@ function buildClientConfirmationHtml(data: LeadFormData): string {
   <div style="background:#ffffff;border-radius:8px;padding:32px;max-width:600px;margin:0 auto;">
 
     <div style="background:#0a0a0a;padding:20px 32px;border-radius:8px 8px 0 0;margin:-32px -32px 32px;text-align:center;">
-      <p style="margin:0;color:#ffffff;font-size:18px;font-weight:700;letter-spacing:0.05em;">AMARAN INTEGRAL SERVICE</p>
+      <p style="margin:0;color:#ffffff;font-size:18px;font-weight:700;letter-spacing:0.05em;">ZEBRA BLINDS TAMPA</p>
       <p style="margin:6px 0 0;color:#C9A84C;font-size:12px;text-transform:uppercase;letter-spacing:0.12em;">Tampa Bay, Florida</p>
     </div>
 
