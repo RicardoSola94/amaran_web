@@ -26,7 +26,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pt-20">
         <Hero />
         <TrustBar />
         <Solutions />

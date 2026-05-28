@@ -15,7 +15,7 @@ export default function WhyUs() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null)
 
   return (
-    <section className="whyus-section" style={{ backgroundColor: '#0a0a0a' }}>
+    <section id="whyus" className="whyus-section scroll-mt-20" style={{ backgroundColor: '#0a0a0a' }}>
       <div className="whyus-container">
 
         {/* Header */}

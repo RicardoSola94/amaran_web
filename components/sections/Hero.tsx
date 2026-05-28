@@ -15,7 +15,7 @@ export default function Hero() {
         className="hero-section"
         style={{
           position: 'relative',
-          minHeight: '100vh',
+          minHeight: '100dvh',
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
@@ -183,6 +183,12 @@ export default function Hero() {
             </div>
 
             {/* Google Reviews badge */}
+            <a
+              href="https://www.google.com/maps/search/Amaran+Integral+Service+Tampa"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
             <div className="hero-reviews" style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }}>
               <div style={{ display: 'flex', gap: 2 }}>
                 {[1, 2, 3, 4, 5].map(i => (
@@ -202,6 +208,7 @@ export default function Hero() {
                 5.0 · 61 Google Reviews
               </span>
             </div>
+            </a>
 
           </div>
         </div>
@@ -237,7 +244,7 @@ export default function Hero() {
           }
 
           .hero-content {
-            padding: 0 20px 94px 20px !important;
+            padding: 20px 20px 94px 20px !important;
             transform: translateY(2px);
           }
 

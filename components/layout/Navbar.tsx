@@ -28,9 +28,9 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset'
+    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
     return () => {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = ''
     }
   }, [isMenuOpen])
 
@@ -390,7 +390,13 @@ function MobileNavLink({
   return (
     <a
       href={href}
-      onClick={onClick}
+      onClick={(e) => {
+        e.preventDefault()
+        onClick()
+        setTimeout(() => {
+          document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
+        }, 270)
+      }}
       style={{
         fontFamily: 'var(--font-display)',
         fontSize: 52,

@@ -72,7 +72,7 @@ export default function Process() {
   const { t } = useLanguage()
 
   return (
-    <section className="process-section" id="process" style={{ background: '#f0efed' }}>
+    <section className="process-section scroll-mt-20" id="process" style={{ background: '#f0efed' }}>
       <div className="process-container">
         <SectionHeader
           eyebrow={t('process_eyebrow') as string}

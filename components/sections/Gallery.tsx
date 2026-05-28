@@ -8,11 +8,27 @@ type GalleryItemType = 'interior' | 'exterior'
 
 const galleryItems = [
   { id: 'g1', label: 'Zebra Blinds', city: 'Tampa', type: 'interior' as GalleryItemType, image: '/images/gallery/image1.jpeg' },
-  { id: 'g2', label: 'Blackout Blinds', city: 'Brandon', type: 'interior' as GalleryItemType, image: '/images/gallery/image2.jpeg' },
-  { id: 'g3', label: 'Shade Screens', city: 'St. Petersburg', type: 'interior' as GalleryItemType, image: '/images/gallery/image3.jpeg' },
-  { id: 'g4', label: 'Zipper Screens', city: 'Riverview', type: 'exterior' as GalleryItemType, image: '/images/gallery/image4.jpeg' },
-  { id: 'g5', label: 'Motorized Screens', city: 'Sarasota', type: 'exterior' as GalleryItemType, image: '/images/gallery/motorized-screens-sarasota.png' },
-  { id: 'g6', label: 'Patio Screens', city: 'Tampa', type: 'exterior' as GalleryItemType, image: '/images/gallery/image5.jpeg' },
+    { id: 'g13', label: 'Zipper Screens', city: '', type: 'exterior' as GalleryItemType, image: '/images/gallery/zipper_1.jpeg' },
+  { id: 'g2', label: 'Blackout Blinds', city: 'Brandon', type: 'interior' as GalleryItemType, image: '/images/gallery/blackout.jpeg' },
+    { id: 'g7', label: 'Drapery', city: 'Riverview', type: 'exterior' as GalleryItemType, image: '/images/gallery/image4.jpeg' },
+  
+
+  { id: 'g4', label: 'Motorized Screens', city: 'Sarasota', type: 'exterior' as GalleryItemType, image: '/images/gallery/motorized-screens-sarasota.png' },
+      { id: 'g15', label: 'Traslúcidos', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/taslucido.jpeg' },
+  { id: 'g5', label: 'Patio Screens', city: 'Tampa', type: 'exterior' as GalleryItemType, image: '/images/gallery/image5.jpeg' },
+  { id: 'g6', label: 'Blackout Blinds', city: 'Brandon', type: 'interior' as GalleryItemType, image: '/images/gallery/blackout_1.jpeg' },
+{ id: 'g3', label: 'Drapery', city: 'St. Petersburg', type: 'interior' as GalleryItemType, image: '/images/gallery/image3.jpeg' },
+  { id: 'g8', label: 'Zebra Blinds', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/zebra.jpeg' },
+  { id: 'g9', label: 'Zebra Blinds', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/zebra_1.jpeg' },
+
+  { id: 'g10', label: 'Zebra Blinds', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/zebra_2.jpeg' },
+  { id: 'g11', label: 'Zebra Blinds', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/zebra_4.jpeg' },
+  { id: 'g12', label: 'Zipper Screens', city: '', type: 'exterior' as GalleryItemType, image: '/images/gallery/zipper.jpeg' },
+
+  { id: 'g14', label: 'Zipper Screens', city: '', type: 'exterior' as GalleryItemType, image: '/images/gallery/zipper_2.jpeg' },
+
+  { id: 'g16', label: 'Traslúcidos', city: '', type: 'interior' as GalleryItemType, image: '/images/gallery/taslucido_1.jpeg' },
+
 ]
 
 export default function Gallery() {
@@ -43,7 +59,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section id="gallery" className="gallery-section" style={{ backgroundColor: '#f0efed' }}>
+      <section id="gallery" className="gallery-section scroll-mt-20" style={{ backgroundColor: '#f0efed' }}>
         <div className="gallery-container">
 
           {/* Header */}

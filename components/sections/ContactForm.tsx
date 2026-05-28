@@ -58,7 +58,7 @@ export default function ContactForm() {
   const required = { required: true, message: t('form_required') as string }
 
   return (
-    <section className="contact-section" id="contact" style={{ background: '#f0efed' }}>
+    <section className="contact-section scroll-mt-20" id="contact" style={{ background: '#f0efed' }}>
       <div className="contact-container">
         <SectionHeader
           eyebrow={t('contact_eyebrow') as string}

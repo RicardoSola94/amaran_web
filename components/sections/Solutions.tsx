@@ -69,7 +69,7 @@ export default function Solutions() {
 
   return (
     <>
-      <section id="solutions" className="solutions-section" style={{ backgroundColor: '#f0efed' }}>
+      <section id="solutions" className="solutions-section scroll-mt-20" style={{ backgroundColor: '#f0efed' }}>
 
         {/* HEADER */}
         <div className="solutions-header" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 64px', textAlign: 'center' }}>
