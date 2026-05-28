@@ -23,11 +23,13 @@ export default function Hero() {
       >
         {/* FONDO — foto ocupa todo */}
         <Image
-          src="/images/hero/hero_amaran.png"
+          src="/images/hero/hero_amaran.webp"
           alt="Amaran Integral Service — Custom Zipper Screens and Blinds installation in Tampa Bay, Florida"
           fill
           priority
           sizes="100vw"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScAAAAAElFTkSuQmCC"
           className="hero-bg-image"
           style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
         />
@@ -224,10 +226,9 @@ export default function Hero() {
 
         @media (max-width: 767px) {
           .hero-section {
-            min-height: 100dvh !important;
-            height: 100dvh !important;
+            min-height: 85dvh !important;
             display: flex !important;
-            align-items: center !important;
+            align-items: flex-start !important;
             overflow: hidden !important;
           }
 
@@ -244,7 +245,7 @@ export default function Hero() {
           }
 
           .hero-content {
-            padding: 20px 20px 94px 20px !important;
+            padding: 110px 20px 50px 20px !important;
             transform: translateY(2px);
           }
 
@@ -260,9 +261,10 @@ export default function Hero() {
           }
 
           .hero-subtitle {
-            font-size: 14px !important;
-            line-height: 1.55 !important;
+            font-size: 17px !important;
+            line-height: 1.6 !important;
             margin-bottom: 16px !important;
+            color: rgba(255,255,255,0.92) !important;
           }
 
           .hero-badges {
@@ -271,8 +273,10 @@ export default function Hero() {
           }
 
           .hero-badges span {
-            font-size: 9px !important;
-            padding: 4px 8px !important;
+            font-size: 11px !important;
+            padding: 5px 10px !important;
+            background: rgba(201,168,76,0.20) !important;
+            border-color: rgba(201,168,76,0.55) !important;
           }
 
           .hero-ctas {
